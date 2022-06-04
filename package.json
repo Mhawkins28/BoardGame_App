@@ -1,0 +1,26 @@
+{
+  "name": "boardgame_app",
+  "version": "1.0.0",
+  "description": "Project 2 - full CRUD app using Node.js, Mongoose, Express and EJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mhawkins28/BoardGame_App.git"
+  },
+  "keywords": [],
+  "author": "Megan Hawkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mhawkins28/BoardGame_App/issues"
+  },
+  "homepage": "https://github.com/Mhawkins28/BoardGame_App#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  }
+}
