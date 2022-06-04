@@ -32,6 +32,7 @@ This app will be perfect for any board game enthusiast out there! This applicati
 - As the user, I would like to post entries and/or access a global forum or game review board to see the averaged ratings.
 - As the user, I would like to have a unique page that displays the games on a bookshelf and have the names/links to show page in the shape of game board boxes on the shelf.
 - As the user, I would like interesting, smooth page transition animations (SWUP?)
+- As the user, I would like to have the ability to share my collection with friends.
 
 ### Wireframes
 
