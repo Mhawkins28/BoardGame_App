@@ -1,0 +1,69 @@
+[
+    {
+       "title": "7 Wonders",
+       "description": "This game lasts three ages. In each age, players receive seven cards from a particular deck, choose one of those cards, then pass the remainder to an adjacent player. Each round after revealing cards simultaneously, paying resources if needed or collecting resources or interacting with other players in various ways,Each player then chooses another card from the deck they were passed, and the process repeats until players have six cards in play from that age. After three ages, the game ends.",
+       "players": "2-7",
+       "duration": "30",
+       "img": "https://cf.geekdo-images.com/RvFVTEpnbb4NM7k0IF8V7A__imagepage/img/zruHYxY2_jx-796WgsDj7hitidQ=/fit-in/900x600/filters:no_upscale():strip_icc()/pic860217.jpg",
+       "category": "Deck construction, Strategy"
+    },
+
+    {
+        "title": "Viticulture",
+        "description": "Players find themselves in the roles of people in rustic, pre-modern Tuscany who have inherited meager vineyards. They have a few plots of land, an old crushpad, a tiny cellar, and three workers. They each have a dream of being the first to call their winery a true success.",
+        "players": "2-6",
+        "duration": "90",
+        "img": "https://cf.geekdo-images.com/WrnWFA1Sysm3-nQyBe1sUA__imagepage/img/bIXVqEFYoQM68eOHsgPvzGhlxls=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2619743.jpg",
+        "category": ["Worker-placement", "Strategy"]
+     },
+     {
+      "title": "Azul",
+      "description": "Players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they've placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player's score. The player with the most points at the end of the game wins.",
+      "players": "2-4",
+      "duration": "30-45",
+      "img": "https://cf.geekdo-images.com/tz19PfklMdAdjxV9WArraA__imagepage/img/K2rwaCiB7-p41iVG3_BCdUDBo8o=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3718275.jpg",
+      "category": ["Abstract"]
+   },
+   {
+      "title": "Ticket To Ride",
+      "description": "Players collect cards of various types of train cars they then use to claim railway routes in North America. The longer the routes, the more points they earn. Additional points come to those who fulfill Destination Ticket goal cards that connect distant cities; and to the player who builds the longest continuous route.",
+      "players": "2-4",
+      "duration": "30-60",
+      "img": "https://cf.geekdo-images.com/ZWJg0dCdrWHxVnc0eFXK8w__imagepage/img/FcSGmLeIStNfb0l_qKSuOyz-rHY=/fit-in/900x600/filters:no_upscale():strip_icc()/pic38668.jpg",
+      "category": ["Euro", "Strategy"]
+   },
+   {
+      "title": "Catan",
+      "description": "Players try to be the dominant force on the island of Catan by building settlements, cities, and roads. On each turn dice are rolled to determine what resources the island produces. Players build by spending resources (sheep, wheat, wood, brick and ore) that are depicted by these resource cards",
+      "players": "3-4",
+      "duration": "60-120",
+      "img": "https://cf.geekdo-images.com/W3Bsga_uLP9kO91gZ7H8yw__imagepage/img/M_3Vg1j2HlNgkv7PL2xl2BJE2bw=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2419375.jpg",
+      "category": ["Euro", "strategy" ]
+   },
+   {
+      "title": "Monolpoly",
+      "description": "Players take the part of land owners, attempting to buy and then develop their land. Income is gained by other players visiting their properties and money is spent when they visit properties belonging to other players. When times get tough, players may have to mortgage their properties to raise cash for fines, taxes and other misfortunes.",
+      "players": "2-8",
+      "duration": "60-180",
+      "img": "https://cf.geekdo-images.com/Ly7GMkyfbPqEDu0qihBBRg__imagepage/img/1AhE-sUGhNYuoimv_c2TYS2WL3Y=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6706534.jpg",
+      "category": ["Area control", "Strategy"]
+   },
+   {
+      "title": "Evolution",
+      "description": "Players adapt their species in a dynamic ecosystem where food is scarce and predators lurk. Traits like Hard Shell and Horns will protect your species from Carnivores, while a Long Neck will help them get food that others cannot reach. With over 4,000 ways to evolve your species, every game becomes a different adventure.",
+      "players": "2-6",
+      "duration": "60",
+      "img": "https://cf.geekdo-images.com/wo_EYno7S66psGPMl_JtiQ__imagepage/img/zkFtiwu5gSoDo3rUWLrfdlVzpjE=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3543505.jpg",
+      "category": ["Strategy"]
+   },
+   {
+      "title": "Hues and Cues",
+      "description": "What hue do you think of when we say “apple”? Hues and Cues is a vibrant game of colorful communication where players are challenged to make connections to colors with words. Using only one and two-word cues, players try to get others to guess a specific hue from the 480 colors on the game board.",
+      "players": "3-10",
+      "duration": "30",
+      "img": "https://cf.geekdo-images.com/jdR8WW75HkaoHGMTCIx9lA__itemrep/img/OJqZ2Oii6P_msEKVwQ9y7Nfp55o=/fit-in/246x300/filters:strip_icc()/pic5390676.jpg",
+      "category": ["Party Game"]
+   }
+
+
+]

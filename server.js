@@ -9,7 +9,7 @@ const PORT = 3000;
 // // connect to the MongoDB with mongoose
 require('./db/connection');
 
-const reviewRouter = require('./routes/reviewRts')
+// const reviewRouter = require('./routes/reviewRts')
 const gameRouter = require('./routes/gameRts')
 
 // create the Express app
@@ -28,15 +28,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // mount all routes with appropriate base paths
-app.use('/reviews', reviewRouter);
 app.use('/games', gameRouter);
 
 // catch 404 and forward to error handler
-
 app.use(function (req, res, next) {
     next(createError(404));
   });
-
 
 app.listen(PORT, ()=>{
     console.log(`Hello from PORT ${PORT}`)

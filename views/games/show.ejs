@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Detail</title>
+</head>
+<body>
+    <div class="gameDetail">
+        <h2>
+            <%= game.title %>
+        </h2>
+
+        <Button><a href="/games">Back</a></Button>
+
+        <h4>
+            Description:<br> <%= game.description %>
+        </h4>
+        <img src="<%= game.img %>" alt="game">
+        <h4>
+            Number of players: <%= game.players %>
+        </h4>
+        <h4>
+            Duration: <%= game.duration %> Minutes
+        </h4>
+        <h4>
+            Catagory: <%= game.category %>
+        </h4>
+    </div>
+
+    <div class="modifyBtns">
+        <form action="/games/<%= game._id %>/edit">
+            <input type="submit" value="Update Game">
+        </form><br>
+    
+        <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete Game">
+        </form><br>   
+    </div> 
+
+</body>
+</html>

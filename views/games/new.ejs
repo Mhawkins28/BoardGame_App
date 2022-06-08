@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Game</title>
+</head>
+<body>
+    <form action="/games" method='POST'>
+        <label for="title">Name of Game:</label>
+        <input type="text" name='title' required>
+
+        <label for="description">Give a brief description:</label>
+        <textarea type="text" name="description" rows="5", cols="160"></textarea>
+
+        <label for="players">How many people can play?</label>
+        <input type="text" name="players">
+
+        <label for="duration">How long does a game usually last?</label>
+        <input type="text" name="duration">
+
+        <label for="img">Go grab an image url and paste it here:</label>
+        <input type="text" name="img">
+
+        <input type="submit">
+        <a href="/games" class = 'button'>Cancel</a>
+    </form>
+</body>
+</html>
+
+<!-- <body>
+    <form action="/games" method="POST">
+        Title: <br><input name="title" type="text"><br>
+        Description: <br><input name="description" type="text"><br>
+        Image:<br> <input name="img" type="text"><br>
+        players: <br><input name="players" type="text"><br>
+        Duration: <br><input name="duration" type="text"><br><br>
+        <input type="submit" value="Create New Game!"><br>
+    </form>
+</body>
+</html> -->

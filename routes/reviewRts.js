@@ -1,22 +1,16 @@
-const express = require('express')
-
-const router = express.Router()
-const reviewCtrl = require('../controllers/reviewCtrl')
-
-
-//may not neeed reveiwIndex, but keeping for now
-router.get('/', reviewCtrl.reviewIndex)
-
-router.get('/new', reviewCtrl.newReviewForm)
-//router.post('/', reviewCtrl.postNewReview) -- create new reveiw post
-
-router.get('/:id', reviewCtrl.showReviewDetail)
-
-router.get('/:id/edit', reviewCtrl.editReviewForm)
-//router.put('/:id', reviewCtrl.updateReview) --> submit edit form
-
-//router.delete('/:id',reviewCtrl.deleteReview) -- deletes review (may be different depending on where the reviews are indexed)
+// const express = require('express');
+// const router = express.Router();
+// const reviewCtrl = require('../controllers/reviews');
 
 
+// // router.get('/', reviewCtrl.showReviewDetail) --same for game so need to figure out where to put 
 
-module.exports = router 
+// router.get('/:id/review', reviewCtrl.newReviewForm)
+// router.post('/:id', reviewCtrl.postNewReview)
+// router.get('/edit/review/:id', reviewCtrl.editReviewForm)
+// router.put('/edit/review/:id', reviewCtrl.updateReview)
+
+// router.delete('/:id', reviewCtrl.deleteReview)
+
+
+// module.exports = router;
