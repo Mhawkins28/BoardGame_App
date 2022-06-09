@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="/form.css">
     <title>Edit Game</title>
 </head>
 <body>
@@ -15,11 +15,17 @@
         <label for="description">Give a brief description:</label>
         <textarea type="text" name="description" rows="5", cols="160"><%= game.description %></textarea>
         <br>
-        <label for="players">How many people can play?</label>
-        <input type="text" name="players" value= '<%= game.players %>'>
+        <label for="playerMin">Minimum amount of people that can play?</label>
+        <input type="number" name="playerMin" value= '<%= game.playerMin %>'>
         <br>
-        <label for="players">How long does one game usually last?</label>
-        <input type="text" name="players" value= '<%= game.duration %>'>
+        <label for="playerMax">Maximim amount of people that can play?</label>
+        <input type="number" name="playerMax" value= '<%= game.playerMax %>'>
+        <br>
+        <label for="durationMin">Minimum amount of time it takes to play a game?</label>
+        <input type="number" name="durationMin" value= '<%= game.durationMin %>'>
+        <br>
+        <label for="durationMax">Maximum amount of time it takes to play a game?</label>
+        <input type="number" name="durationMax" value= '<%= game.durationMax %>'>
         <br>
         <label for="img">Go grab an image url and paste it here:</label>
         <input type="text" name="img" value ='<%= game.img %>'>

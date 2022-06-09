@@ -15,11 +15,17 @@
         <label for="description">Give a brief description:</label>
         <textarea type="text" name="description" rows="5", cols="160"></textarea>
         <br>
-        <label for="players">How many people can play?</label>
-        <input type="text" name="players">
+        <label for="playerMin">Minimum amount of people that can play?</label>
+        <input type="number" name="playerMin">
         <br>
-        <label for="duration">How long does a game usually last?</label>
-        <input type="text" name="duration"> minutes
+        <label for="playerMax">Maximim amount of people that can play?</label>
+        <input type="number" name="playerMax"> 
+        <br>
+        <label for="durationMin">Minimum amount of time it takes to play a game?</label>
+        <input type="number" name="durationMin"> minutes
+        <br>
+        <label for="durationMax">Maximim amount of time it takes to play a game?</label>
+        <input type="number" name="durationMax"> minutes
         <br>
         <label for="img">Go grab an image url and paste it here:</label>
         <input type="text" name="img">
@@ -29,15 +35,3 @@
     </form>
 </body>
 </html>
-
-<!-- <body>
-    <form action="/games" method="POST">
-        Title: <br><input name="title" type="text"><br>
-        Description: <br><input name="description" type="text"><br>
-        Image:<br> <input name="img" type="text"><br>
-        players: <br><input name="players" type="text"><br>
-        Duration: <br><input name="duration" type="text"><br><br>
-        <input type="submit" value="Create New Game!"><br>
-    </form>
-</body>
-</html> -->

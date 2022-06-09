@@ -11,6 +11,8 @@ require('./db/connection');
 
 // const reviewRouter = require('./routes/reviewRts')
 const gameRouter = require('./routes/gameRts')
+const reviewRouter = require('./routes/reviewRts');
+const { use } = require('./routes/reviewRts');
 
 // create the Express app
 const app = express();
@@ -30,6 +32,7 @@ app.use(express.static ('public'));
 
 // mount all routes with appropriate base paths
 app.use('/games', gameRouter);
+app.use ('games', reviewRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

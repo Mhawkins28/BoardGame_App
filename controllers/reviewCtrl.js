@@ -12,18 +12,31 @@ const reviewForm = (req, res)=>{
     res.render('reviews/newReview')
 })
 }
+
+
 //POST review to games/:id FIXME:
 
-// const createReview = (req, res) => {
-//   Game.findById(req.params.id, (err, game) => {
-//     game.reviews.push(req.body);
-//     game.save(function(err) {
-//       res.redirect(`/games/${game._id}`);
-//     });
-//   });
-// }
+const createReview = (req, res) => {
+  Game.findById(req.params.id, (err, game) => {
+    game.review.push(req.body);
+    game.save(function(err) {
+      res.redirect(`/games/${game._id}`);
+    });
+  });
+}
 
 //GET edit review form FIXME:
+
+const editReviewForm = (req, res) => {
+  Game.findById(req.params.id, (err, game) => {
+    if(err) {
+        res.status(400).json({message:"Invalid"})
+        return
+    }
+    res.render('reviews/editReview', review )
+})
+}
+
 
 
 //PUT the edited/updated review in the place of its predecessor FIXME:
@@ -33,10 +46,9 @@ const reviewForm = (req, res)=>{
 
 
 
-
-
 module.exports = {
   createReview,
-  reviewForm
+  reviewForm,
+  editReviewForm 
 };
 

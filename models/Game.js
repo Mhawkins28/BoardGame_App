@@ -11,19 +11,12 @@ const reviewSchema = new Schema(
 
 const gameSchema = new Schema(
     {
-    title: {
-        type: String,
-        required: true,
-      },
+    title: String,
     description: String,
-    players: { 
-        type: String, 
-        pattern: "[0-9]{1}-[0-9]{1}"
-        },
-    duration: {
-        type: String, 
-        pattern: "[0-9]{2}-[0-9]{2}||[0-9]{2}-[0-9]{3}||[0-9]{2}"
-        },
+    playerMin: Number,
+    playerMax: Number,
+    durationMin: Number,
+    durationMax: Number,
     img: [String], 
     category: [String], 
     reviews: [reviewSchema],

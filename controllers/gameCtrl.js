@@ -45,7 +45,6 @@ const updateGame = (req, res) => {
     })
 }
 
-
 const deleteGame = (req, res) => {
     Game.findByIdAndDelete(req.params.id, ()=>{
         res.redirect('/games')
@@ -61,3 +60,5 @@ module.exports = {
     updateGame,
     deleteGame
 }
+
+
