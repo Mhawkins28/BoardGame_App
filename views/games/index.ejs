@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel='stylesheet' href='/header.css'>
     <title>Homepage</title>
 </head>
 <body>
-    <h1>Board Game Central</h1>
-       <Button><a href="/games/new">Add new Game</a></Button>
+    <button class="addBtn">
+        <a class="addBtn "href ="/games/new">ADD NEW GAME</a>
+    </button>
 
-    <div class="container">
+    <h1 class="page-title">Board Game Collection</h1>  
+        <div class="game-container">
         <% gameIndex.forEach((Game) =>{ %>
-            <div class="games">
-                <h2>
-                    <%= Game.title %>
-                </h2>
-                <a href="/games/<%= Game._id %>">
-                    <img src="<%= Game.img %>" alt="">
-                </a>           
-            </div>
-            <%}) %>
+            <h2 class="game-title">
+                <%= Game.title %>
+            </h2>
+            <a class="game-cards" href="/games/<%= Game._id %>">
+                <img src="<%= Game.img %>" alt="<%= Game.title %>">
+            </a>           
         </div>
-
+        <%}) %>
 </body>
 </html>

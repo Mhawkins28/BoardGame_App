@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/form.css">
     <title>Add Game</title>
 </head>
 <body>
     <form action="/games" method='POST'>
         <label for="title">Name of Game:</label>
         <input type="text" name='title' required>
-
+        <br>
         <label for="description">Give a brief description:</label>
         <textarea type="text" name="description" rows="5", cols="160"></textarea>
-
+        <br>
         <label for="players">How many people can play?</label>
         <input type="text" name="players">
-
+        <br>
         <label for="duration">How long does a game usually last?</label>
-        <input type="text" name="duration">
-
+        <input type="text" name="duration"> minutes
+        <br>
         <label for="img">Go grab an image url and paste it here:</label>
         <input type="text" name="img">
-
+        <br>
         <input type="submit">
         <a href="/games" class = 'button'>Cancel</a>
     </form>

@@ -25,7 +25,6 @@ const showGameDetail = (req, res) => {
     })
 }
 
-
 const editGameForm = (req, res) => {
     Game.findById(req.params.id, (err, game) => {
         if(err) {

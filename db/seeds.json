@@ -5,7 +5,8 @@
        "players": "2-7",
        "duration": "30",
        "img": "https://cf.geekdo-images.com/RvFVTEpnbb4NM7k0IF8V7A__imagepage/img/zruHYxY2_jx-796WgsDj7hitidQ=/fit-in/900x600/filters:no_upscale():strip_icc()/pic860217.jpg",
-       "category": "Deck construction, Strategy"
+       "category": "Deck construction, Strategy",
+       "reviews": ""
     },
 
     {
@@ -38,7 +39,7 @@
       "players": "3-4",
       "duration": "60-120",
       "img": "https://cf.geekdo-images.com/W3Bsga_uLP9kO91gZ7H8yw__imagepage/img/M_3Vg1j2HlNgkv7PL2xl2BJE2bw=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2419375.jpg",
-      "category": ["Euro", "strategy" ]
+      "category": ["Euro", "Strategy" ]
    },
    {
       "title": "Monolpoly",
