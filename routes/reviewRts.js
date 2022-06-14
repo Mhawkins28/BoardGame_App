@@ -2,22 +2,22 @@ const express = require('express');
 const router = express.Router();
 const reviewCtrl = require('../controllers/reviewCtrl');
 
-//GET the create review form FIXME:
-router.get('games/:id/review/new', reviewCtrl.reviewForm)
 
-//POST review to games/:id FIXME:
+// router.get('/new', reviewCtrl.reviewForm)
 
-router.post('games/:id/review', reviewCtrl.createReview);
+//POST review to /:id
 
-//GET edit review form FIXME:
+router.post('/:id', reviewCtrl.addReview);
 
-router.get('games/:id/review/edit', reviewCtrl.editReviewForm)
+//GET edit review form
 
-//PUT the edited/updated review in the place of its predecessor FIXME:
+router.get('/:id/edit', reviewCtrl.editReviewForm)
 
-// router.put('/edit/review/:id', reviewCtrl.updateReview)
+//PUT the edited/updated review in the place of its predecessor
 
-//DELETE Review FIXME:
+// router.patch('/:id', reviewCtrl.updateReview)
+
+//DELETE Review
 
 // router.delete('/:id', reviewCtrl.deleteReview)
 

@@ -3,17 +3,17 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center ;
-    color: rgb(188, 187, 190);
+    color: rgb(0, 2, 2);
 }
 
 .form {
 	max-width: 700px;
 	padding: 20px 12px 10px 20px;
 	font: 13px Arial, Helvetica, sans-serif;
-	position: absolute;
-	left: 50%;
+	/* position: absolute;
+	left: 70%;
 	top: 50%;
-	transform: translate(-50%, -65%);
+	transform: translate(-50%, -65%); */
 }
 .form-heading{
 	font-weight: bold;
@@ -97,4 +97,15 @@ a {
     background: #f2af89;
 	color:#0a4358;
 	margin-left: .5rem;
+}
+
+
+.table {
+    max-width: 700px;
+	padding: 20px 12px 10px 20px;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -65%);
+    font-size: 1.5rem;
 }

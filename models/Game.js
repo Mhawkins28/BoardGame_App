@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 const reviewSchema = new Schema(
     {
     content: { type: String, required: true },
-    rating: { type: Number, min: 1, max: 5, default: 5 },
+    rating: { type: Number, min: 1, max: 5, default: 5 }
     },
     { timestamps: true }
 );
@@ -18,8 +18,7 @@ const gameSchema = new Schema(
     durationMin: Number,
     durationMax: Number,
     img: [String], 
-    category: [String], 
-    reviews: [reviewSchema],
+    review: [reviewSchema]
     },
   );
   

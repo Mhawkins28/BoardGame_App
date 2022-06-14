@@ -16,7 +16,7 @@ const reviewForm = (req, res)=>{
 
 //POST review to games/:id FIXME:
 
-const createReview = (req, res) => {
+const addReview = (req, res) => {
   Game.findById(req.params.id, (err, game) => {
     game.review.push(req.body);
     game.save(function(err) {
@@ -33,22 +33,36 @@ const editReviewForm = (req, res) => {
         res.status(400).json({message:"Invalid"})
         return
     }
-    res.render('reviews/editReview', review )
+    res.render('reviews/editReview')
 })
 }
 
 
 
-//PUT the edited/updated review in the place of its predecessor FIXME:
+//PATCH the edited/updated review in the place of its predecessor FIXME:
 
 
 //DELETE Review FIXME:
 
+// const deleteReview = (req, res) => {
+//   Game.findById(req.params.id, (err, game) => {
+//   game.review.id(req.params.reviewId).remove()
+//     if (err) {
+//       res.status(400).json({message:"Cannot Delete"})
+//       return
+//   }
+// res.redirect(`/reviews/${req.params.id}`)
+// })
+// }
+
+
+
 
 
 module.exports = {
-  createReview,
+  addReview,
   reviewForm,
-  editReviewForm 
+  editReviewForm
+  // deleteReview
 };
 

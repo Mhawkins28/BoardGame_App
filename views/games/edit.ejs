@@ -4,35 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/form.css">
+    <link rel="stylesheet" href="/forms.css">
     <title>Edit Game</title>
 </head>
 <body>
-    <form action="/games/<%=game._id%>/?_method=put" method='POST'>
-        <label for="title">Title:</label>
-        <input type="text" name='title' value= '<%= game.title %>'>
-        <br>
-        <label for="description">Give a brief description:</label>
-        <textarea type="text" name="description" rows="5", cols="160"><%= game.description %></textarea>
-        <br>
-        <label for="playerMin">Minimum amount of people that can play?</label>
-        <input type="number" name="playerMin" value= '<%= game.playerMin %>'>
-        <br>
-        <label for="playerMax">Maximim amount of people that can play?</label>
-        <input type="number" name="playerMax" value= '<%= game.playerMax %>'>
-        <br>
-        <label for="durationMin">Minimum amount of time it takes to play a game?</label>
-        <input type="number" name="durationMin" value= '<%= game.durationMin %>'>
-        <br>
-        <label for="durationMax">Maximum amount of time it takes to play a game?</label>
-        <input type="number" name="durationMax" value= '<%= game.durationMax %>'>
-        <br>
-        <label for="img">Go grab an image url and paste it here:</label>
-        <input type="text" name="img" value ='<%= game.img %>'>
-        <br><br>
+    <div class="form">
+        <div class="form-heading">Edit <%= game.title %> </div>
+
+        <form action="/games/<%=game._id%>/?_method=put" method='POST'>
+
+        <label for="title"><span>Title<span class="required">*</span></span>
+        <input type="text" class="input-field" name="title" value= '<%= game.title %>'/></label>
+
+        <label for="img"><span>Go grab an image url and paste it here:<span class="required">*</span></span>
+        <input type="text" class="input-field" name="img"value= '<%= game.img %>'/></label>
+
+        <label for="playerMin"><span>Minimum amount of people that can play?</span> 
+        <input type="number" class="input-field" name="playerMin" value= '<%= game.playerMin %>'/></label>
+
+        <label for="playerMax"><span>Maximim amount of people that can play?</span> 
+        <input type="number" class="input-field" name="playerMax" value= '<%= game.playerMax %>'/></label>
+
+        <label for="durationMin"><span>Minimum amount of time it takes to play a game?</span> 
+        <input type="number" class="input-field" name="durationMin" value= '<%= game.durationMin %>'/></label>
+
+        <label for="durationMax"><span>Maximim amount of time it takes to play a game?</span> 
+        <input type="number" class="input-field" name="durationMax"value= '<%= game.durationMax %>'/></label>
+
+        <label for="description"><span>Give a brief description:</span><br><br>
+        <textarea type="text" class="textarea-field" name="description"> <%= game.description %></textarea></label>
+
+
         <input type="submit">
-        <br><br>
-        <a href="/games/<%=game._id %>">Cancel</a>
-    </form>   
+        <a href="/games/<%= game._id %>" class ='button'>Cancel</a>
+
+        </form>
+
+    </div>    
 </body>
 </html>

@@ -1,12 +1,152 @@
-.addBtn {
-    text-decoration: none;
-    background-color: rgba(0, 154, 123, 0);
-    padding: 0.75em;
-    color: rgb(188, 33, 97);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+   }
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 3rem
+
+   }
+
+.subtitle {
+	font-size: 2.5rem
 }
 
-
-.game-cards {
-    border: 3px solid rgb(54, 218, 4);
+.pageHeader {
+    text-align: center;
+    padding-top: .5rem;
+    font-size: 1.5rem
 }
 
+.navButtons > li {
+    display: inline;
+	text-align: center;
+    list-style: none;
+	
+}
+
+.navButtons a {
+	text-decoration: none;
+	color:rgb(134, 208, 212);
+	font-size: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+:root {
+	--surface-color: rgba(237, 223, 195, 0.928);
+	--curve: 40;
+}
+  
+* {
+	box-sizing: border-box;
+}
+  
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	background-image: url(./assets/images/gradientBg.jpg);
+	/* background-image: url(https://images.unsplash.com/photo-1564944062924-57874442ddea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80); */
+	
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center ;                                                   
+}
+  
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(215px, 2fr));
+	gap: 2rem;
+	margin: 4rem 5vw;
+	padding: 0;
+	list-style-type: none;
+}
+  
+.card {
+	position: relative;
+	display: block;
+	height: 85%;  
+	border-radius: calc(var(--curve) * 1px);
+	overflow: hidden;
+	text-decoration: none;
+}
+  
+.card__image {      
+	width: 100%;
+	height: auto;
+}
+  
+.card__overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;      
+	border-radius: calc(var(--curve) * 1px);    
+	background-color: var(--surface-color);      
+	transform: translateY(100%);
+	transition: .2s ease-in-out;
+}
+  
+.card:hover .card__overlay {
+	transform: translateY(0);
+}
+  
+.card__header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 2em;
+	padding: 2em;
+	border-radius: calc(var(--curve) * 1px) 0 0 0;    
+	background-color: var(--surface-color);
+	transform: translateY(-100%);
+	transition: .2s ease-in-out;
+}
+  
+.card__arc {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	bottom: 100%;
+	right: 0;      
+}
+  
+.card__arc path {
+	fill: var(--surface-color);
+	d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+  
+.card:hover .card__header {
+	transform: translateY(0);
+}
+  
+.card__thumb {
+	flex-shrink: 0;
+	width: 50px;
+	height: 50px;      
+	border-radius: 50%;      
+}
+  
+.card__title {
+	font-size: 1em;
+	margin: 0 0 .3em;
+	color: 	#000000;
+}
+  
+.card__description {
+	padding: 0 2em 2em;
+	margin: 0;
+	color: #000000;
+	font-family: "MockFlowFont";   
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}   
