@@ -1,32 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Joan&family=Playfair+Display+SC:wght@700&family=Staatliches&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	background-image: url(./assets/images/gradientBg.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center ;
-    color: rgb(188, 187, 190);
+	color:rgba(24, 42, 68, 0.969);
+	font-family: 'joan, serif';  
+}
+
+.pageHeader {
+    text-align: center;
+    padding: 2em 0 2em;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	color: #ceb9d8;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-family: 'Playfair Display SC', serif;
+	padding-bottom: 1.5rem;
+	width: 70%;
+	border-bottom-style: double;
+	border-bottom: thick double rgba(183, 153, 116, 0.72)
+}
+
+.formContainer {
+	width: 70%;
+	background: linear-gradient(to right bottom, rgba(81, 114, 126, 0.216),rgba(164, 195, 218, 0.292));
+	box-shadow: 4px 4px 8px rgba(87, 92, 105, 0.571);
+	border-radius: 2rem;
+	backdrop-filter: blur(1rem);
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
 }
 
 .form {
-	max-width: 700px;
-	padding: 20px 12px 10px 20px;
-	font: 13px Arial, Helvetica, sans-serif;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -65%);
+	display: flex;
+	justify-content: center;
 }
-.form-heading{
-	font-weight: bold;
-	font-style: italic;
-	border-bottom: 2px solid #ddd;
-	margin-bottom: 20px;
-	font-size: 30px;
-	padding-bottom: 3px;
-    color: rgb(134, 208, 212);
+
+form {
+	justify-content: center;
+	margin-left:2.5em
+
 }
+
 .form label{
 	display: block;
-	margin: 0px 0px 15px 0px;
+	margin: 0px 0px 17px 0px;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 .form label > span{
 	width: 400px;
@@ -56,7 +91,7 @@ body {
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	padding: 7px;
+	padding: 5px;
 	outline: none;
 }
 .form .textarea-field{
@@ -64,37 +99,34 @@ body {
 	width: 90%;
 }
 
-.form input[name=tutorial] {
-	border: 1px solid rgba(69, 78, 144, 0.646);
-	box-shadow: 1px 1px 3px rgb(104, 142, 187);
-	-moz-box-shadow: 1px 1px 3px rgb(104, 142, 187);
-	-webkit-box-shadow: 1px 1px 3px rgb(104, 142, 187);
-}
 .form input[type=submit],
 .button {
-	border: none;
-	padding: 8px 15px 8px 15px;
-	background: #0a4358;
-	color: #f2af89;
-	box-shadow: 1px 1px 4px #010000;
-	-moz-box-shadow: 1px 1px 4px #010000;
-	-webkit-box-shadow: 1px 1px 4px #010000;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
+	font-family: 'joan, serif'; 
+	cursor: pointer;
+	padding: 8px 14px;
+    border-radius: .25em;
+    background-color: transparent;
+    color: rgb(12, 0, 36, 0.969);
+    font-size: 16px;
+    border: 2px solid rgba(12, 0, 36, 0.969);
+    box-shadow:  2px 4px 4px rgba(24, 33, 56, 0.969);
+	-moz-box-shadow: 2px 4px 4px rgba(24, 33, 56, 0.969);
+	-webkit-box-shadow: 2px 4px 4px rgba(24, 33, 56, 0.969);
+	margin-right: 5px;
+	margin-bottom: 2em;
+	
 }
-.form input[type=submit]:hover,
-.button:hover {
+
+.form input[type=submit]:hover {
 	background: #bf92c1;
 	color: #fff;
 }
 
-a {
-    text-decoration: none;
+.button:hover {
+	background: #fcba8f;
+	color: #0c0024f7;	
 }
 
-.button {
-    background: #f2af89;
-	color:#0a4358;
-	margin-left: .5rem;
+a {
+    text-decoration: none;
 }

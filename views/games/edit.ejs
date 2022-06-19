@@ -8,15 +8,18 @@
     <title>Edit Game</title>
 </head>
 <body>
-    <div class="form">
-        <div class="form-heading">Edit <%= game.title %> </div>
-
+<header class= "pageHeader">
+    <h1>Edit <%= game.title %><br>
+    </h1>
+</header>
+<section class="formContainer">
+    <div class="form">  
         <form action="/games/<%=game._id%>/?_method=put" method='POST'>
 
-        <label for="title"><span>Title<span class="required">*</span></span>
+        <label for="title"><span>Title<span class="required"> *</span></span>
         <input type="text" class="input-field" name="title" value= '<%= game.title %>'/></label>
 
-        <label for="img"><span>Go grab an image url and paste it here:<span class="required">*</span></span>
+        <label for="img"><span>Go grab an image url and paste it here:<span class="required"> *</span></span>
         <input type="text" class="input-field" name="img"value= '<%= game.img %>'/></label>
 
         <label for="playerMin"><span>Minimum amount of people that can play?</span> 
@@ -31,15 +34,16 @@
         <label for="durationMax"><span>Maximim amount of time it takes to play a game?</span> 
         <input type="number" class="input-field" name="durationMax"value= '<%= game.durationMax %>'/></label>
 
-        <label for="description"><span>Give a brief description:</span><br><br>
+        <label for="description"><span>Give a brief description:</span><br>
         <textarea type="text" class="textarea-field" name="description"> <%= game.description %></textarea></label>
 
 
         <input type="submit">
+        
         <a href="/games/<%= game._id %>" class ='button'>Cancel</a>
 
         </form>
-
-    </div>    
+    </div>  
+</section>
 </body>
 </html>

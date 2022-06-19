@@ -1,17 +1,13 @@
 const mongoose = require('mongoose');
 
-// connect to database
-mongoose.connect('mongodb://localhost:27017/boardgame-app', {
-    useNewUrlParser: true
-})
+// mongoose.connect('mongodb://localhost:27017/mongoose-store', {
+//     useNewUrlParser: true
+// })
 
-//FIXME: ask about this---> connect to .env/passport db
-
-// mongoose.connect(process.env.DATABASE_URL, {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     useCreateIndex: true
-//   });
+mongoose.connect('mongodb+srv://Mhawkins:Megz1028@seiprojects.xqifg.mongodb.net/?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  });
 
 const db = mongoose.connection;
 

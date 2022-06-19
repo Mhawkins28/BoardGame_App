@@ -9,40 +9,58 @@
     <title>The Board Game Stratagist</title>
 </head>
 <body>
-    <header class= "pageHeader">
-        <h1>
-            THE BOARD GAME STRATAGIST<br>
-            <span class="subtitle">Board Game Collection</span>
-        </h1>
-    
-        <nav id="mainNav">
-            <div class="btnContainer">
-                <ul class="navButtons">
-                    <li><a href="/games/new">ADD NEW GAME</a></li>
-                    <li style="padding-left:1.5em"><a href="#">ARCHIVE</a></li>
-                    <li style="padding-left:1.5em"><a href="#">WISHLIST</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <ul class="cards">
+<header class= "pageHeader">
+    <h1>THE BOARD GAME STRATAGIST<br>
+    <span class="subtitle">BOARD GAME COLLECTION</span>
+    </h1>
+    <nav id="mainNav">
+        <div class="btnContainer">
+            <ul class="navButtons">
+                <li><a href="#">ARCHIVE</a></li>
+                <li style="padding-left:1.5em"><a href="#">WISHLIST</a></li>
+                <li style="padding-left:1.5em"><a href="/auth">LOGIN</a></li><br>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<ul class="cards">
+    <li>
+        <a href="/games/new" class="card">
+        <img src="/assets/images/newPic.jpg" class="card__image" alt="">
+        <div class="card__overlay">        
+        <div class="card__header">
+            <svg class="card__arc" xmlns="https://www.w3.org/TR/SVG2/"><path /></svg>     
+            <img src="/assets/images/gamesIcon.png" class="card__thumb" alt="">
+        <div class="card__header-text">
+            <h3 style="color: rgb(0, 95, 147); font-weight: bold" class="card__title"><b>ADD NEW GAME</b></h3>
+        </div>
+        </div>
+        <div>
+            <p style="font-weight: bold"class="card__description">Growing your collection? Click here to add your new board game!</p>
+        </div>
+        </div>
+        </a>      
+    </li>
         <% gameIndex.forEach((Game) =>{ %>
         <li>
             <a href="/games/<%= Game._id %>" class="card">
-                <img src="<%= Game.img %>" class="card__image" alt="<%= Game.title %>" />
+                <img src="<%= Game.img %>" class="card__image" alt="<%= Game.title %>">
                 <div class="card__overlay">        
                 <div class="card__header">
-                    <svg class="card__arc" xmlns="https://www.w3.org/TR/SVG2/"><path /></svg>                 
-                    <img class="card__thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEUAAACnej3aAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="" />
-                    <div class="card__header-text">
+                    <svg class="card__arc" xmlns="https://www.w3.org/TR/SVG2/"><path /></svg>     
+                    <img src="/assets/images/dice1.png" class="card__thumb" alt="">
+                <div class="card__header-text">
                     <h3 class="card__title"><%= Game.title %></h3>
-                    </div>
+                </div>
                 </div>
                 <p class="card__description">Click for More Info!</p>
                 </div>
             </a>
             </li>
         <%}) %>
+    </ul>
+<!-- <div class="dice"></div> -->
 </body>
 </body>
 </html>

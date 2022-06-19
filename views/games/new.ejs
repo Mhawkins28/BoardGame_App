@@ -8,8 +8,12 @@
     <title>Add Game</title>
 </head>
 <body>
+<header class= "pageHeader">
+    <h1>Tell Me About Your New Game!
+    </h1>
+</header>
+<section class="formContainer">
     <div class="form">
-        <div class="form-heading">Tell Me About Your New Game!</div>
 
         <form action="/games" method="POST">
 
@@ -31,13 +35,13 @@
         <label for="durationMax"><span>Maximim amount of time it takes to play a game?</span> 
         <input type="number" class="input-field" name="durationMax"/></label>
 
-        <label for="description"><span>Give a brief description:</span><br><br><textarea name="description" class="textarea-field"></textarea></label>
+        <label for="description"><span>Give a brief description:</span><br><textarea name="description" class="textarea-field"></textarea></label>
 
         <input type="submit">
         <a href="/games" class ='button'>Cancel</a>
 
         </form>
-
     </div>
+</section>
 </body>
 </html>

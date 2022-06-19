@@ -4,65 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="/show.css">
-
     <title>Game Detail</title>
 </head>
 <body>
-  <header class= "pageHeader">
-    <h1>
-        THE BOARD GAME STRATAGIST<br>
-        <span class="subtitle">Board Game Collection</span>
-    </h1>
-
     <nav id="mainNav">
         <div class="btnContainer">
             <ul class="navButtons">
-                <li><a href="#">EDIT GAME</a></li>
-                <li style="padding-left:1.5em"><a href="#">DELETE GAME</a></li>
-                <li style="padding-left:1.5em"><a href="/games">BACK</a></li>
+                <li>
+                  <a href="/games/<%= game._id %>/edit">EDIT GAME</a> 
+                </li>              
+                <li style="padding-left:1.75em">
+                <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
+                <input class="deleteBtn" type="submit" value="DELETE GAME">
+                </form> 
+                </li>
+                <li style="padding-left:1.75em"><a href="/games">MAIN COLLECTION</a></li> 
             </ul>
+  
+          </div>   
         </div>
     </nav>
-</header>
-<!-- These buttons will be upt in a ribbon/nav bar--> 
-<div class="modifyBtns">
-  <form action="/games/<%= game._id %>/edit">
-    <input type="submit" value="EDIT GAME">
-  </form><br>
+
+<main>
+  <section class="mainContainer">  
+    <div class="game">
+      <div class = "imgCon">
+          <img class="gameImage" src="<%= game.img %>" alt="">
+        </div>
+        <div class="gamePlayer">
+          <i class='fas fa-user-friends' style='font-size:36px'></i>
+          <h2><strong>Number of Players:</strong> <br><%= game.playerMin %> - <%= game.playerMax %> Players</h2>
+        </div><br><br>
+        <div class="gameDuration">
+          <i class='fas fa-clock' style='font-size:36px'></i>
+          <h2><strong>Duration:</strong><br><%= game.durationMin %> - <%= game.durationMax %> Minutes</h2>
+      </div>
+    </div>
+
+    <div class="gameBody">
+      <h1 class="gameTitle"><%= game.title %></h1>
+        <div class="descriptionCard">          
+          <div class="description">
+            <h2 style="padding-bottom: 1rem">Game Overview:</h2>
+            <p><%= game.description %></p>
+            </div>
+        </div>
       
-  <form action="/games/<%= game._id %>?_method=DELETE" method="POST">
-    <input type="submit" value="Delete Game">
-  </form><br>   
-</div> 
-<!------------------------------------------------------------->
-<!----------- game description ------------------------>
-  <div class="gameDetail">
-    <h2>
-      <%= game.title %>
-    </h2>
-<div>
-  <h4>
-    Description:<br> <%= game.description %>
-  </h4>
-  <img src="<%= game.img %>" alt="game">
-  <h4>
-   Number of players: <%= game.playerMin %> - <%= game.playerMax %>
-  </h4>
-  <h4>
-    Duration: <%= game.durationMin %> - <%= game.durationMax %> Minutes
-  </h4>
-</div>
-
-  <!------------------------------------------------------------->
-  <!-------------- reveiw section ----------------------->
-
+        <div class="reviewCon">  
+          <h2 style="padding-bottom: 1rem">My Ratings, Reviews, and/or Comments:</h2>
+          <% if (game.review.length) { %>
+            <table class="reviewDisplay" style="width:90%">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <% game.review.forEach(function(r) { %>
+                  <tr style="height:30px">
+                    <td>
+                      <%= r.rating %>
+                    </td>
+                    <td style="padding-left: 1.5rem">
+                      <%= r.content %>
+                    </td>
+                    <td><form method="POST" action="/reviews/<%=game._id%>/<%=r._id%>?_method=DELETE">
+                    <button class="button" type="submit">DELETE</button>
+                    </form>
+                    </td> 
+                  </tr>
+                  <% }); %>
+              </tbody>
+            </table>          
+            <% } else { %>
+              <h3 style="color:rgb(248, 221, 186)">No Reviews Yet</h3>
+              <% } %>
+          </div>
+    </div>
+  </section>
   <div class="form">
-    <div class="form-heading">Reviews!</div>
       <form action="/reviews/<%=game._id%>" method='POST'>
-    
-      <label for="rating"><span>What Would you Rate This Game?<span class="required">*</span></span></label>
+    <div class="selectRating">
+      <label for="rating"><span>What Would you Rate This Game?</label>
         <select name="rating">
           <option value="1">1</option>
           <option value="2">2</option>
@@ -70,52 +96,21 @@
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-    
+      </div><br>
       <label for="content"><span>Give a brief review:</span><br><br>
-      <textarea type="text" class="textarea-field" name="content" value= "<%= game.review.content %>"></textarea></label>
+      <textarea type="text" class="textarea-field" name="content" value= "<%= game.review.content %>"></textarea></label><br>
     
-      <input type="submit">
+      <input type="submit" value="SUBMIT">
       </form>
   </div>
-  <div class="table">
-  <% if (game.review.length) { %>
-    <table>
-      <thead>
-        <tr>
-          <th>Review</th>
-          <th>Rating</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% game.review.forEach(function(r) { %>
-          <tr>
-
-            <td>
-              <%= r.content %>
-            </td>
-            <td>
-              <%= r.rating %>
-            </td>
-
-            <td><form method="POST" action="/reviews/<%= game._id %>/<%=r.id%>?_method=DELETE">
-              <button type="submit">Delete</button>
-            </form>
-
-            </td>
-            <td><form" method="POST" action="/reviews/<%= game._id %>/edit">
-              <button type="submit">Edit</button>
-              </form>
-            </td>
-          </tr>
-          <% }); %>
-      </tbody>
-    </table>
-    <% } else { %>
-      <h5>No Reviews Yet</h5>
-      <% } %>
-    </div>
-
-<!------------------------------------------------------------->
+<!-- <div class="c1"></div> 
+<div class="c2"></div>   -->
+</main>
 </body>
 </html>
+
+
+
+
+
 

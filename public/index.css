@@ -1,35 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Joan&family=Playfair+Display+SC:wght@700&family=Staatliches&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-   }
+}
 
 h1 {
 	margin-bottom: 20px;
-	font-size: 3rem
-
-   }
-
-.subtitle {
-	font-size: 2.5rem
+	font-size: 3rem;
+	font-family: 'Fredericka the Great', cursive;
+	padding-bottom: 1.5rem;
+	width: 70%;
+	border-bottom-style: double;
+	border-bottom: thick double rgba(183, 153, 116, 0.72)
 }
 
 .pageHeader {
     text-align: center;
     padding-top: .5rem;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subtitle {
+	font-size: 2.2rem;
+	color: rgb(158, 184, 196);
+	font-family: 'Playfair Display SC', serif;
+}
+
+#mainNav {
+	padding-top: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Playfair Display SC', serif;
+	font-weight: bold;
 }
 
 .navButtons > li {
     display: inline;
-	text-align: center;
     list-style: none;
-	
 }
 
 .navButtons a {
 	text-decoration: none;
-	color:rgb(134, 208, 212);
+	/* color:rgba(174,147,158,255); */
+	color: #ceb9d8;
 	font-size: 1.5rem;
 }
 
@@ -41,75 +60,76 @@ li {
 }
 
 :root {
-	--surface-color: rgba(237, 223, 195, 0.928);
-	--curve: 40;
+	--surface-color: rgba(255, 229, 199, 0.928);
+	--curve: 35;
 }
-  
-* {
-	box-sizing: border-box;
-}
-  
+
 body {
-	font-family: 'Noto Sans JP', sans-serif;
 	background-image: url(./assets/images/gradientBg.jpg);
-	/* background-image: url(https://images.unsplash.com/photo-1564944062924-57874442ddea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80); */
-	
     background-attachment: fixed;
     background-size: cover;
-    background-position: center ;                                                   
+    background-position: center;  
+	color: rgb(188, 187, 190);
+	font-family: 'Staatliches', cursive;  
+	backdrop-filter: blur(1rem);          
 }
-  
+
 .cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(215px, 2fr));
 	gap: 2rem;
-	margin: 4rem 5vw;
+	margin: 5rem 5vw;
 	padding: 0;
 	list-style-type: none;
 }
-  
+
 .card {
 	position: relative;
 	display: block;
 	height: 85%;  
-	border-radius: calc(var(--curve) * 1px);
+	border-radius: calc(var(--curve) * .75px);
 	overflow: hidden;
 	text-decoration: none;
 }
-  
+
 .card__image {      
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
-  
+
+.card:hover {
+	cursor: pointer;
+}
+
 .card__overlay {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	z-index: 1;      
-	border-radius: calc(var(--curve) * 1px);    
+	border-radius: calc(var(--curve) * .75px);    
 	background-color: var(--surface-color);      
 	transform: translateY(100%);
 	transition: .2s ease-in-out;
 }
-  
+
 .card:hover .card__overlay {
 	transform: translateY(0);
 }
-  
+
+
 .card__header {
 	position: relative;
 	display: flex;
 	align-items: center;
 	gap: 2em;
-	padding: 2em;
+	padding: 1em;
 	border-radius: calc(var(--curve) * 1px) 0 0 0;    
 	background-color: var(--surface-color);
 	transform: translateY(-100%);
 	transition: .2s ease-in-out;
 }
-  
+
 .card__arc {
 	width: 80px;
 	height: 80px;
@@ -117,36 +137,38 @@ body {
 	bottom: 100%;
 	right: 0;      
 }
-  
+
 .card__arc path {
 	fill: var(--surface-color);
 	d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }       
-  
+
 .card:hover .card__header {
 	transform: translateY(0);
 }
-  
+
 .card__thumb {
 	flex-shrink: 0;
 	width: 50px;
 	height: 50px;      
-	border-radius: 50%;      
+	border-radius: 50%;
+
 }
-  
+
 .card__title {
-	font-size: 1em;
-	margin: 0 0 .3em;
-	color: 	#000000;
+	font-size: 1.1em;
+	margin: 0 0 .2em;
+	color:#020a1b;
+	font-family: 'Playfair Display SC', serif;
 }
-  
+
 .card__description {
 	padding: 0 2em 2em;
 	margin: 0;
-	color: #000000;
-	font-family: "MockFlowFont";   
+	color: #020a1b;  
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 3;
 	overflow: hidden;
+	font-size: 1.1rem;
 }   

@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const loginCtrl = require('../controllers/loginCtrl');
+const authCtrl = require('../controllers/authCtrl');
 
-router.get('/', loginCtrl.login)
+router.get('/', authCtrl.login)
 
 
 module.exports = router 

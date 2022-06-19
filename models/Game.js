@@ -4,9 +4,8 @@ const { Schema } = mongoose;
 const reviewSchema = new Schema(
     {
     content: { type: String, required: true },
-    rating: { type: Number, min: 1, max: 5, default: 5 }
-    },
-    { timestamps: true }
+    rating: { type: Number, min: 1, max: 5, default: 1 },
+    }
 );
 
 const gameSchema = new Schema(
@@ -18,8 +17,8 @@ const gameSchema = new Schema(
     durationMin: Number,
     durationMax: Number,
     img: [String], 
-    review: [reviewSchema]
+    review: [reviewSchema],
     },
-  );
-  
-  module.exports = mongoose.model('Game', gameSchema);
+);
+
+module.exports = mongoose.model('Game', gameSchema);

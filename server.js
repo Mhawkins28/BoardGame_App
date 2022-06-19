@@ -2,22 +2,24 @@ const express = require ('express');;
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const session = require('express-session')
-const methodOverride = require('method-override');
 const cors = require('cors');
 const PORT = 3000;
 
-// // connect to the MongoDB with mongoose
+require('dotenv').config()
+const methodOverride = require('method-override');
+
+
+// require('./config/database');
 require('./db/connection');
 
-// const reviewRouter = require('./routes/reviewRts')
+
 const gameRouter = require('./routes/gameRts')
 const reviewRouter = require('./routes/reviewRts');
-const loginRouter = require('./routes/loginRts')
+const authRouter = require('./routes/authRts')
 
-// create the Express app
 const app = express();
 
-// view engine setup
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -30,16 +32,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cookieParser());
 app.use(session({
-    secret: 'SEIRocks!',
+    secret: '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',
     resave: false,
-    saveUninitialized: true
-  }));
-
+    saveUninitialized: true,
+}));
 
 // mount all routes with appropriate base paths
 app.use('/games', gameRouter);
 app.use ('/reviews', reviewRouter);
-app.use ('/login', loginRouter);
+app.use ('/auth', authRouter);
 
 
 app.listen(PORT, ()=>{

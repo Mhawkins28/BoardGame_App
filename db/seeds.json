@@ -1,28 +1,26 @@
 [
-    {
-       "title": "7 Wonders",
-       "description": "This game lasts three ages. In each age, players receive seven cards from a particular deck, choose one of those cards, then pass the remainder to an adjacent player. Each round after revealing cards simultaneously, paying resources if needed or collecting resources or interacting with other players in various ways,Each player then chooses another card from the deck they were passed, and the process repeats until players have six cards in play from that age. After three ages, the game ends.",
-       "playerMin": "2",
-       "playerMax": "7",
-       "durationMin": "30",
-       "durationMax": "30",
-       "img": "https://cf.geekdo-images.com/RvFVTEpnbb4NM7k0IF8V7A__imagepage/img/zruHYxY2_jx-796WgsDj7hitidQ=/fit-in/900x600/filters:no_upscale():strip_icc()/pic860217.jpg",
-       "category": ["Deck construction, Strategy"],
-       "review": {"content": "test contecnt", "rating": "5"}
-    },
+   {
+      "title": "7 Wonders",
+      "description": "This game lasts three ages. In each age, players receive seven cards from a particular deck, choose one of those cards, then pass the remainder to an adjacent player. Each round after revealing cards simultaneously, paying resources if needed or collecting resources or interacting with other players in various ways,Each player then chooses another card from the deck they were passed, and the process repeats until players have six cards in play from that age. After three ages, the game ends.",
+      "playerMin": "2",
+      "playerMax": "7",
+      "durationMin": "30",
+      "durationMax": "30",
+      "img": "https://cf.geekdo-images.com/RvFVTEpnbb4NM7k0IF8V7A__imagepage/img/zruHYxY2_jx-796WgsDj7hitidQ=/fit-in/900x600/filters:no_upscale():strip_icc()/pic860217.jpg",
+      "review": {"content": "Extremely fun and quite addicting. I introduced it to my close group of friends, and it has become a ritual for us to play every time we get together.", "rating": "4"}
+   },
 
-    {
-        "title": "Viticulture",
-        "description": "Players find themselves in the roles of people in rustic, pre-modern Tuscany who have inherited meager vineyards. They have a few plots of land, an old crushpad, a tiny cellar, and three workers. They each have a dream of being the first to call their winery a true success.",
-        "playerMin": "2",
-        "playerMax": "6",
-        "durationMin": "90",
-        "durationMax": "90",
-        "img": "https://cf.geekdo-images.com/WrnWFA1Sysm3-nQyBe1sUA__imagepage/img/bIXVqEFYoQM68eOHsgPvzGhlxls=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2619743.jpg",
-        "category": ["Worker-placement", "Strategy"],
-        "review": {"content": "test contecnt", "rating": "5"}
-     },
-     {
+{
+      "title": "Viticulture",
+      "description": "Players find themselves in the roles of people in rustic, pre-modern Tuscany who have inherited meager vineyards. They have a few plots of land, an old crushpad, a tiny cellar, and three workers. They each have a dream of being the first to call their winery a true success.",
+      "playerMin": "2",
+      "playerMax": "6",
+      "durationMin": "90",
+      "durationMax": "90",
+      "img": "https://cf.geekdo-images.com/WrnWFA1Sysm3-nQyBe1sUA__imagepage/img/bIXVqEFYoQM68eOHsgPvzGhlxls=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2619743.jpg",
+      "review": {"content": "It's a little diffiult to teach/learn, but once you get the hang of it, it is a great game to play. I love it!", "rating": "4"}
+   },
+{
       "title": "Azul",
       "description": "Players take turns drafting colored tiles from suppliers to their player board. Later in the round, players score points based on how they've placed their tiles to decorate the palace. Extra points are scored for specific patterns and completing sets; wasted supplies harm the player's score. The player with the most points at the end of the game wins.",
       "playerMin": "2",
@@ -30,8 +28,7 @@
       "durationMin": "30",
       "durationMax": "45",
       "img": "https://cf.geekdo-images.com/tz19PfklMdAdjxV9WArraA__imagepage/img/K2rwaCiB7-p41iVG3_BCdUDBo8o=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3718275.jpg",
-      "category": ["Abstract"],
-      "review": {"content": "test content", "rating": "5"}
+      "review": {"content": "This is a beatiful game that is very easy to learn. It is quite simple, but don't let that fool you. It does envolve strategy and gets more difficult as the round goes. I would definitely bring this one to game night.", "rating": "4"}
    },
    {
       "title": "Ticket To Ride",
@@ -41,8 +38,7 @@
       "durationMin": "30",
       "durationMax": "60",
       "img": "https://cf.geekdo-images.com/ZWJg0dCdrWHxVnc0eFXK8w__imagepage/img/FcSGmLeIStNfb0l_qKSuOyz-rHY=/fit-in/900x600/filters:no_upscale():strip_icc()/pic38668.jpg",
-      "category": ["Euro", "Strategy"],
-      "review": {"content": "test contecnt", "rating": "5"}
+      "review": {"content": "This is easy-going fun at its best; you do not need to think too hard or react too fast, but I still have not gotten bored. Love this one.", "rating": "4"}
    },
    {
       "title": "Catan",
@@ -52,30 +48,27 @@
       "durationMin": "60",
       "durationMax": "120",
       "img": "https://cf.geekdo-images.com/W3Bsga_uLP9kO91gZ7H8yw__imagepage/img/M_3Vg1j2HlNgkv7PL2xl2BJE2bw=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2419375.jpg",
-      "category": ["Euro", "Strategy" ],
-      "review": {"content": "test contecnt", "rating": "5"}
+      "review": {"content": "This game is easy to teach and learn. I would definitely bring this to game night!", "rating": "5"}
    },
    {
       "title": "Monolpoly",
       "description": "Players take the part of land owners, attempting to buy and then develop their land. Income is gained by other players visiting their properties and money is spent when they visit properties belonging to other players. When times get tough, players may have to mortgage their properties to raise cash for fines, taxes and other misfortunes.",
       "playerMin": "2",
-      "playerMax": "",
+      "playerMax": "8",
       "durationMin": "60",
       "durationMax": "180",
       "img": "https://cf.geekdo-images.com/Ly7GMkyfbPqEDu0qihBBRg__imagepage/img/1AhE-sUGhNYuoimv_c2TYS2WL3Y=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6706534.jpg",
-      "category": ["Area control", "Strategy"],
-      "review": {"content": "test contecnt", "rating": "5"}
+      "review": {"content": "A classic game. I have a fun time plying this one. Its can be long, but if you have the time, it brings back memories and is a good time! I also love that this game was origianlly invented by a woman to critisize capitolism", "rating": "3"}
    },
    {
       "title": "Evolution",
       "description": "Players adapt their species in a dynamic ecosystem where food is scarce and predators lurk. Traits like Hard Shell and Horns will protect your species from Carnivores, while a Long Neck will help them get food that others cannot reach. With over 4,000 ways to evolve your species, every game becomes a different adventure.",
       "playerMin": "2",
-      "playerMax": "",
+      "playerMax": "8",
       "durationMin": "60",
       "durationMax": "60",
       "img": "https://cf.geekdo-images.com/wo_EYno7S66psGPMl_JtiQ__imagepage/img/zkFtiwu5gSoDo3rUWLrfdlVzpjE=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3543505.jpg",
-      "category": ["Strategy"],
-      "review": {"content": "test contecnt", "rating": "5"}
+      "review": {"content": "My friends loved this one. I found it difficult to learn and it takes many times of play yo learn the cards and how to properly stratigize.", "rating": "2"}
    },
    {
       "title": "Hues and Cues",
@@ -83,11 +76,8 @@
       "playerMin": "3",
       "playerMax": "10",
       "durationMin": "30",
-      "durationMax": "",
+      "durationMax": "45",
       "img": "https://cf.geekdo-images.com/jdR8WW75HkaoHGMTCIx9lA__itemrep/img/OJqZ2Oii6P_msEKVwQ9y7Nfp55o=/fit-in/246x300/filters:strip_icc()/pic5390676.jpg",
-      "category": ["Party Game"],
-      "review": {"content": "test contecnt", "rating": "5"}
+      "review": {"content": "This is the easiest game to play out there, and it can be a ton of fun with a big group. Who knew grass had so many shades of green?", "rating": "5"}
    }
-
-
 ]
