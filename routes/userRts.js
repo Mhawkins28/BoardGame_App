@@ -13,6 +13,7 @@ router.patch("/:id", userCtrl.updateRoute);
 
 router.delete("/:id", userCtrl.deleteRoute);
 
+
 // router.get("/:profileId", userCtrl.userProfile)
 
 module.exports = router;

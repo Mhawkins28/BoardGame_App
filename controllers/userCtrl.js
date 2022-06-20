@@ -30,6 +30,7 @@ async function deleteRoute(req, res) {
   res.json({ message: "User deleted" });
 }
 
+
 // let userProfile = (req, res)=>{
 //   User.findById(req.params.ProfileId, (err, profile) => {
 //     if (err) {
