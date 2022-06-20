@@ -1,7 +1,6 @@
 require('./connection');
-// const User = require('../models/User')
 const Game = require('../models/Game');
-const User = require("../models/user");
+const User = require("../models/User");
 const gameSeeds = require('./seeds.json');
 
 Game.deleteMany({})

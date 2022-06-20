@@ -11,7 +11,7 @@ function createRoute(req, res) {
 }
 
 function showRoute(req, res) {
-  User.findById(req.params.id, (err, user) => {
+  User.findById(req.params.id, (err, User) => {
     if (err) {
       res.status(400).json(err);
       return;
@@ -30,10 +30,21 @@ async function deleteRoute(req, res) {
   res.json({ message: "User deleted" });
 }
 
+// let userProfile = (req, res)=>{
+//   User.findById(req.params.ProfileId, (err, profile) => {
+//     if (err) {
+//       req.flash("error", "something went wrong.")
+//       res.redirect('/')
+//     }
+//     res.render('users/profile', {user: profile})
+//   })
+// }
+
 module.exports = {
   indexRoute,
   createRoute,
   showRoute,
   updateRoute,
   deleteRoute,
+  // userProfile,
 };
