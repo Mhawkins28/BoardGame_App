@@ -1,8 +1,30 @@
-const express = require('express')
-const router = express.Router()
-const authCtrl = require('../controllers/authCtrl');
+const router = require("express").Router();
+const passport = require("passport");
 
-router.get('/', authCtrl.login)
+router.get("/", function (req, res) {
+  res.redirect("/games");
+});
 
+router.get(
+  "/auth/google",
+  passport.authenticate("google", { scope: ["profile", "email"] })
+);
 
-module.exports = router 
+router.get(
+  "/oauth2callback",
+  passport.authenticate("google", {
+    successRedirect: "/games",
+    failureRedirect: "/games",
+  })
+);
+
+router.get("/logout", function (req, res, next) {
+  req.logout(function (err) {
+    if (err) {
+      return next(err);
+    }
+    res.redirect("/games");
+  });
+});
+
+module.exports = router;

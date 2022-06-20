@@ -18,7 +18,13 @@
             <ul class="navButtons">
                 <li><a href="#">ARCHIVE</a></li>
                 <li style="padding-left:1.5em"><a href="#">WISHLIST</a></li>
-                <li style="padding-left:1.5em"><a href="/auth">LOGIN</a></li><br>
+                <li style="padding-left:1.5em">
+                    <% if (user) { %>
+                        <a class="active" href="/logout">LOG OUT</a>
+                        <% } else { %>
+                        <a class="active" href="/auth/google">GOOGLE LOGIN</a>
+                        <% } %>
+                </li>
             </ul>
         </div>
     </nav>
@@ -54,7 +60,7 @@
                     <h3 class="card__title"><%= Game.title %></h3>
                 </div>
                 </div>
-                <p class="card__description">Click for More Info!</p>
+                <p class="card__description">Click here for more info!</p>
                 </div>
             </a>
             </li>

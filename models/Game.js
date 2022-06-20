@@ -18,6 +18,7 @@ const gameSchema = new Schema(
     durationMax: Number,
     img: [String], 
     review: [reviewSchema],
+    owner: { type: mongoose.Schema.Types.ObjectId, ref: "User"}
     },
 );
 
