@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session')
 const passport = require('passport');
 const cors = require('cors');
+const normalizePort = require('normalize-port')
 const PORT = normalizePort(process.env.PORT || '3000');
 
 require('dotenv').config()
