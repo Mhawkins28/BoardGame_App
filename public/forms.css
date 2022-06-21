@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-position: center ;
 	color:rgba(24, 42, 68, 0.969);
-	font-family: 'joan, serif';  
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .pageHeader {
@@ -101,7 +101,7 @@ form {
 
 .form input[type=submit],
 .button {
-	font-family: 'joan, serif'; 
+	font-family: 'Playfair Display', serif; 
 	cursor: pointer;
 	padding: 8px 14px;
   border-radius: .25em;

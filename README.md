@@ -1,9 +1,6 @@
 <div id="top"></div>
 <div align="center">
-  <a href="https://github.com/Mhawkins28/BoardGame_App">
-    <img src="./assets/images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-<h3 align="center">BOARD GAME STRATEGIST <br>Built by Megan  Hawkins</h3>
+<h3 align="center">BOARD GAME STRATEGIST</h3>
 
   <p align="center">
   This app is perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user!
@@ -18,7 +15,6 @@
     <a href="https://github.com/Mhawkins28/BoardGame_App/issues">Request Feature</a>
   </p>
 </div>
-
 
 <details>
   <summary>Table of Contents</summary>
@@ -62,8 +58,6 @@ My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/
 - At least one model with all 7 RESTful routes and full CRUD.
 - Be deployed online and accessible to the public via Heroku
 - Include wireframes that you designed during the planning process
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Technologies used
  * Frontend
@@ -122,9 +116,6 @@ My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/
 ## Developement
 
 ### Planning, Research, and Future Developement 
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Initial Wireframes
 

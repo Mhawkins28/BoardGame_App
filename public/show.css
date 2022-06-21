@@ -12,7 +12,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-	font-family: 'Staatliches', cursive;
+	font-family: 'Source Sans Pro', sans-serif;
 	color:rgba(24, 42, 68, 0.969)
 }
 
@@ -23,8 +23,7 @@ body {
 	padding: 35px 0 30px;	
 	text-align: center;
   list-style: none;	
-	font-weight: bold;
-	font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
 	
 }
 
@@ -32,7 +31,6 @@ body {
 	text-decoration: none;
 	color: #ceb9d8;
 	font-size: 1.5rem;
-	font-weight: bold;
 }
 
 .deleteBtn  {
@@ -40,7 +38,8 @@ body {
 	color: #ceb9d8;
 	font-size: 1.5rem;
   border: none;
-	font-family: 'Playfair Display SC', serif;
+	font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
 }
 
 main {
@@ -109,7 +108,11 @@ main {
 	margin: 2rem 0rem;
 	padding: 2.5rem;
 	max-width: 90%;
-	color:rgba(18, 33, 53, 0.969)
+	color:rgba(17, 50, 61, 0.958)
+}
+
+.desTitle {
+  color:rgba(18, 33, 53, 0.969)
 }
 
 p {
@@ -128,6 +131,7 @@ tr {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	font-size: 1.1rem;
+	color:rgba(15, 44, 54, 0.958)
 } 
 
 .form {
@@ -143,7 +147,7 @@ tr {
 	background: linear-gradient(to right bottom, rgba(104, 142, 156, 0.216),rgba(255, 232, 206, 0.2));
 	box-shadow: 4px 6px 8px rgba(87, 92, 105, 0.571);
 	font-size: 1.15em; 
-	font-family: 'Playfair Display SC', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 	
 }
 
@@ -166,10 +170,10 @@ tr {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	border: 1px solid rgb(104, 142, 187);
-	box-shadow: 1px 1px 4px #EBEBEB;
-	-moz-box-shadow: 1px 1px 4px #EBEBEB;
-	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border: 1px solid rgb(96, 121, 152);
+	box-shadow: 2px 1px 5px #dec1ef;
+	-moz-box-shadow: 2px 1px 5px #dec1ef;
+	-webkit-box-shadow: 2px 1px 5px #dec1ef;
 	background-color: rgba(194, 194, 194, 0.114);
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
@@ -185,13 +189,13 @@ tr {
 .form input[type=submit],
 .button {
 	padding: 5px 10px;
-	margin-left: .5rem;
-    border-radius: .25em;
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.969);
-    font-size: 14px;
-    border: 2px solid rgba(9, 14, 26, 0.969);
-    box-shadow:  2px 4px 4px rgba(24, 33, 56, 0.969);
+	margin-left: .75rem;
+  border-radius: .25em;
+  background-color: transparent;
+  color: rgba(23, 21, 60, 0.969);
+  font-size: 14px;
+  border: 2px solid rgba(17, 26, 48, 0.969);
+  box-shadow:  2px 4px 4px rgba(24, 33, 56, 0.969);
 	-moz-box-shadow: 2px 4px 4px rgba(24, 33, 56, 0.969);
 	-webkit-box-shadow: 2px 4px 4px rgba(24, 33, 56, 0.969);
 	margin-top: 15px;

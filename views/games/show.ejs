@@ -47,13 +47,13 @@
       <h1 class="gameTitle"><%= game.title %></h1>
         <div class="descriptionCard">          
           <div class="description">
-            <h2 style="padding-bottom: 1rem">Game Overview:</h2>
+            <h2 style="padding-bottom: 1rem" class ="desTitle">Game Overview:</h2>
             <p><%= game.description %></p>
             </div>
         </div>
       
         <div class="reviewCon">  
-          <h2 style="padding-bottom: 1rem">My Ratings, Reviews, and/or Comments:</h2>
+          <h2 style="padding-bottom: 1rem" class ="desTitle">My Ratings, Reviews, and/or Comments:</h2>
           <% if (game.review.length) { %>
             <table class="reviewDisplay" style="width:90%">
               <thead>
@@ -88,16 +88,17 @@
   <div class="form">
       <form action="/reviews/<%=game._id%>" method='POST'>
     <div class="selectRating">
-      <label for="rating"><span>What Would you Rate This Game?</label>
+      <label for="rating"><span><B>WHAT WOULD YOU RATE THIS GAME?</B></label>
         <select name="rating">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
+          <option> </option>
         </select>
       </div><br>
-      <label for="content"><span>Give a brief review:</span><br><br>
+      <label for="content"><span><B>GIVE A BRIEF REVIEW OR COMMENT:</B></span><br><br>
       <textarea type="text" class="textarea-field" name="content" value= "<%= game.review.content %>"></textarea></label><br>
     
       <input type="submit" value="SUBMIT">

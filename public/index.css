@@ -6,10 +6,20 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-image: url(./assets/images/gradientBg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;  
+	color: rgb(188, 187, 190);
+	font-family: 'Source Sans Pro', sans-serif;
+	backdrop-filter: blur(1rem);          
+}
+
 h1 {
 	margin-bottom: 20px;
 	font-size: 3rem;
-	font-family: 'Fredericka the Great', cursive;
+	font-family: 'Playfair Display', serif;
 	padding-bottom: 1.5rem;
 	width: 70%;
 	border-bottom-style: double;
@@ -28,7 +38,9 @@ h1 {
 .subtitle {
 	font-size: 2.2rem;
 	color: rgb(158, 184, 196);
-	font-family: 'Playfair Display SC', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+
 }
 
 #mainNav {
@@ -36,19 +48,21 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Playfair Display SC', serif;
-	font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 
 .navButtons > li {
-    display: inline;
-    list-style: none;
+  display: inline;
+  list-style: none;
+  font-weight: bold;
 }
 
 .navButtons a {
 	text-decoration: none;
 	color: #ceb9d8;
 	font-size: 1.75rem;
+  
 }
 
 .navButtons a:hover{
@@ -65,16 +79,6 @@ li {
 :root {
 	--surface-color: rgba(255, 229, 199, 0.928);
 	--curve: 35;
-}
-
-body {
-	background-image: url(./assets/images/gradientBg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;  
-	color: rgb(188, 187, 190);
-	font-family: 'Staatliches', cursive;  
-	backdrop-filter: blur(1rem);          
 }
 
 .cards {
@@ -162,7 +166,7 @@ body {
 	font-size: 1.1em;
 	margin: 0 0 .2em;
 	color:#020a1b;
-	font-family: 'Playfair Display SC', serif;
+	font-family: 'Playfair Display', serif;
 }
 
 .card__description {
@@ -186,5 +190,5 @@ body {
 
 h3{
   color:rgb(104, 141, 173);
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Playfair Display', serif;
 }
