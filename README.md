@@ -27,16 +27,16 @@
       </ul>
     </li>
     <li>
-      <a href="#User-stories">User Stories</a>
+      <a href="#user-stories">User Stories</a>
       <ul>
-        <li><a href="#MVP">MVP</a></li>
-        <li><a href="#Stretch-Goals">Stretch Goals</a></li>
+        <li><a href="#mvp">MVP</a></li>
+        <li><a href="#stretch-goals">Stretch Goals</a></li>
       </ul>
     </li>
     <li>
-      <a href="#developement ">Planning, Research, and Future Developement</a>
+      <a href="#developement">Planning, Research, and Future Developement</a>
       <ul>
-        <li><a href="#initial-Wireframes">Initial Wireframes</a></li>
+        <li><a href="#initial-wireframes">Initial Wireframes</a></li>
         <li><a href="#tools-used">Tools Used</a></li>
         <li><a href="#future-features">Future Features</a></li>
         <li><a href="#helpful-links-for-this-project">Helpful Links</a></li>
@@ -50,6 +50,13 @@
 
 My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/Mongoose, Express and EJS.
 
+Here are a few of the views of the app!
+
+![Screen Shot 2022-06-21 at 5 20 11 PM](https://user-images.githubusercontent.com/93104882/174899597-a06af99f-82f2-4332-a43f-d713f7c11193.png)
+![Screen Shot 2022-06-21 at 5 21 04 PM](https://user-images.githubusercontent.com/93104882/174899608-ad0cc92c-bfb9-42d5-b018-aad776260c5c.png)
+![Screen Shot 2022-06-21 at 5 21 55 PM](https://user-images.githubusercontent.com/93104882/174899624-e06464a6-16bf-4bd4-965b-4ab62d9b50c9.png)
+![Screen Shot 2022-06-21 at 5 22 16 PM](https://user-images.githubusercontent.com/93104882/174899633-42312614-7937-4d26-9c6d-98c16f94bfdc.png)
+
 ### Technical Requirements
 
 - A working full-stack application, built by you, using Node.js, Mongoose, Express and EJS.
@@ -59,20 +66,19 @@ My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/
 - Include wireframes that you designed during the planning process
 
 ### Technologies used
-**Frontend**
+#### Frontend
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [EJS](https://www.npmjs.com/package/ejs)
 - [Node.js](https://nodejs.org/dist./v6.16.0/docs/api/synopsis.html)
-**Backend**
+#### Backend
 - [Express](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/docs/index.html)
 - [Passport/Passport-google-oauth](https://www.passportjs.org/concepts/authentication/google/)
-**Deploymnet**
+#### Deploymnet
 - [Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 - [MongoDB Atlas](https://www.mongodb.com/atlas)
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## User stories
@@ -102,12 +108,10 @@ My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/
 - As the user, I would like to have a unique page that displays the games on a bookshelf and have the names/links to show page in the shape of game board boxes on the shelf.
 - As the user, I would like interesting, smooth page transition animations (SWUP?)
 - As the user, I would like to have the ability to share my collection with friends.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Developement
-
-### Planning, Research, and Future Developement 
+#### Planning, Research, and Future Developement 
 
 ### Initial Wireframes
 
@@ -128,18 +132,17 @@ My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/
 ## Future Features
 
 - Allow user to add photos (not just urls. I will use:
- * [multer](https://www.npmjs.com/package/multer)
+  * [multer](https://www.npmjs.com/package/multer)
 - Allow user to log in with more login options such as:
- * user-inputed username/password
- * [Facebook](http://www.passportjs.org/packages/passport-facebook/)
- * [Twitter](http://www.passportjs.org/concepts/authentication/twitter/)
- * etc.
+  * user-inputed username/password
+  * [Facebook](http://www.passportjs.org/packages/passport-facebook/)
+  * [Twitter](http://www.passportjs.org/concepts/authentication/twitter/)
+  * etc.
 - Implement a page for the user to add games to a wishlist collection
 - Implement a page for the user to add games to an archive collection
 - Implement functionality for the use to filter and/or search thier collection
 - Implement a page for an open, public cllection, where the user does not have to sign in.  
 - Utilize an API for the user to search a database for new games
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Helpful Links for this Project
@@ -159,5 +162,4 @@ Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
-
 <p align="right">(<a href="#top">back to top</a>)</p>
