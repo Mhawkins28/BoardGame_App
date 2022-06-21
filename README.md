@@ -22,7 +22,7 @@
       <a href="#developement ">Planning, Research, and Future Developement</a>
       <ul>
         <li><a href="#initial-Wireframes">Initial Wireframes</a></li>
-        <li><a href="#tools-used">Technology Used</a></li>
+        <li><a href="#tools-used">Tools Used</a></li>
         <li><a href="#future-features">Future Features</a></li>
         <li><a href="#helpful-links-for-this-project">Helpful Links</a></li>
         <li><a href="#contributing">Contributing</a></li>
@@ -38,6 +38,8 @@ My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/
 
 This app will be perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user! 
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ### Technical Requirements
 
 - A working full-stack application, built by you, using Node.js, Mongoose, Express and EJS.
@@ -45,6 +47,8 @@ This app will be perfect for any board game enthusiast out there! This applicati
 - At least one model with all 7 RESTful routes and full CRUD.
 - Be deployed online and accessible to the public via Heroku
 - Include wireframes that you designed during the planning process
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Technologies used
 Frontend
@@ -67,6 +71,7 @@ Deploymnet
 - Passport-google-oauth
 
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## User stories
 
@@ -97,8 +102,14 @@ Deploymnet
 - As the user, I would like interesting, smooth page transition animations (SWUP?)
 - As the user, I would like to have the ability to share my collection with friends.
 
-## Developement 
-#### Planning, Research, and Future Developement 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Developement
+
+### Planning, Research, and Future Developement 
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Initial Wireframes
 
@@ -108,11 +119,24 @@ Deploymnet
 
 <img width="1748" alt="PROJECT 2 -- BOARD GAME SHELF" src="https://media.git.generalassemb.ly/user/41550/files/c9324fd4-8628-406b-bbb1-0de240116378">
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Unsolved Problems
+xyz
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Future Features
 
+rough draft notes - multer, more login options, sishlist/archive, filter, search, public collection, api, share, ...
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Helpful Links for this Project
+
+will link later
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contributing
 
@@ -125,3 +149,5 @@ Create your Feature Branch (git checkout -b feature/AmazingFeature)
 Commit your Changes (git commit -m 'Add some AmazingFeature')
 Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
