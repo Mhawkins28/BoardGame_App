@@ -9,9 +9,9 @@
 
 body { 
 	background-image: url(./assets/images/gradientBg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 	font-family: 'Staatliches', cursive;
 	color:rgba(24, 42, 68, 0.969)
 }
@@ -22,7 +22,7 @@ body {
 	justify-content: center;
 	padding: 35px 0 30px;	
 	text-align: center;
-    list-style: none;	
+  list-style: none;	
 	font-weight: bold;
 	font-family: 'Playfair Display SC', serif;
 	
@@ -36,10 +36,10 @@ body {
 }
 
 .deleteBtn  {
-    background-color: transparent;
+  background-color: transparent;
 	color: #ceb9d8;
 	font-size: 1.5rem;
-    border: none;
+  border: none;
 	font-family: 'Playfair Display SC', serif;
 }
 
@@ -82,8 +82,7 @@ main {
 	align-items: center;
 	text-align: center;
 	background: linear-gradient(to right bottom, rgba(82, 126, 142, 0.29),rgba(159, 180, 197, 0.181));
-	border-radius: 2rem;
-		
+	border-radius: 2rem;		
 }
 
 .gameBody { 
@@ -149,13 +148,13 @@ tr {
 }
 
 .selectRating select {
-    margin-left: .5rem;
+  margin-left: .5rem;
 	border-radius: .25em;
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.969);
-    font-size: 14px;
-    border: 2px solid rgba(9, 14, 26, 0.969);
-    box-shadow:  2px 4px 4px rgba(24, 33, 56, 0.969);
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.969);
+  font-size: 14px;
+  border: 2px solid rgba(9, 14, 26, 0.969);
+  box-shadow:  2px 4px 4px rgba(24, 33, 56, 0.969);
 }
 
 

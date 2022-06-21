@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Joan&family=Playfair+Display+SC:wght@700&family=Staatliches&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body { 
+	background-image: url(./assets/images/gradientBg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+	color:rgba(24, 42, 68, 0.969)
+}
+
+.pageHeader {
+  padding-top: .5rem;
+  font-size: 1.5rem;
+  display:flex;
+  justify-content: center;
+}
+
+h1 {
+	margin: 20px 0 20px 0;
+	font-size: 3rem;
+  font-family: 'Playfair Display SC', serif;
+  color:rgba(169, 206, 227, 0.958);
+	padding-bottom: 1.5rem;
+	width: 70%;
+	border-bottom: thick double rgba(183, 153, 116, 0.72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:rgba(255, 208, 175, 0.72)
+}
+
+.button {
+	padding: 5px 10px;
+  border-radius: .25em;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.969);
+  font-size: 14px;
+  border: 2px solid rgba(9, 14, 26, 0.969);
+  box-shadow:  2px 4px 4px rgba(24, 33, 56, 0.969);
+	-moz-box-shadow: 2px 4px 4px rgba(24, 33, 56, 0.969);
+	-webkit-box-shadow: 2px 4px 4px rgba(24, 33, 56, 0.969);
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.button:hover {
+	background: #ae8eb0d5;
+	color: rgba(255, 255, 255, 0.958)
+}

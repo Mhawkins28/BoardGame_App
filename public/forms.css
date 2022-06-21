@@ -8,16 +8,16 @@
 
 body {
 	background-image: url(./assets/images/gradientBg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center ;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center ;
 	color:rgba(24, 42, 68, 0.969);
 	font-family: 'joan, serif';  
 }
 
 .pageHeader {
-    text-align: center;
-    padding: 2em 0 2em;
+  text-align: center;
+  padding: 2em 0 2em;
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -65,7 +65,7 @@ form {
 }
 .form label > span{
 	width: 400px;
-    font-size: 16px;
+  font-size: 16px;
 	font-weight: bold;
 	float: left;
 	padding-top: 8px;
@@ -104,12 +104,12 @@ form {
 	font-family: 'joan, serif'; 
 	cursor: pointer;
 	padding: 8px 14px;
-    border-radius: .25em;
-    background-color: transparent;
-    color: rgb(12, 0, 36, 0.969);
-    font-size: 16px;
-    border: 2px solid rgba(12, 0, 36, 0.969);
-    box-shadow:  2px 4px 4px rgba(24, 33, 56, 0.969);
+  border-radius: .25em;
+  background-color: transparent;
+  color: rgb(12, 0, 36, 0.969);
+  font-size: 16px;
+  border: 2px solid rgba(12, 0, 36, 0.969);
+  box-shadow:  2px 4px 4px rgba(24, 33, 56, 0.969);
 	-moz-box-shadow: 2px 4px 4px rgba(24, 33, 56, 0.969);
 	-webkit-box-shadow: 2px 4px 4px rgba(24, 33, 56, 0.969);
 	margin-right: 5px;
@@ -128,5 +128,5 @@ form {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }

@@ -16,7 +16,6 @@ const gameRouter = require('./routes/gameRts')
 const reviewRouter = require('./routes/reviewRts');
 const authRouter = require('./routes/authRts')
 const userRouter = require('./routes/userRts')
-// const wishRouter = require('./routes/wishRts')
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -29,26 +28,25 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cookieParser());
 app.use(session({
-    secret: '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',
-    resave: false,
-    saveUninitialized: true,
+  secret: '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',
+  resave: false,
+  saveUninitialized: true,
 }));
 
 app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(function (req, res, next) {
-    res.locals.user = req.user;
-    next();
+  res.locals.user = req.user;
+  next();
 });
 
 app.use('/games', gameRouter);
 app.use ('/reviews', reviewRouter);
 app.use ('/', authRouter);
 app.use('/users', userRouter);
-// app.use('/wishlist', wishRouter)
 
 app.listen(PORT, ()=>{
-    console.log(`Hello from PORT ${PORT}`)
+  console.log(`Hello from PORT ${PORT}`)
 });
 

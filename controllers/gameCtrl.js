@@ -15,7 +15,6 @@ const newGameForm = (req, res) => {
 }
 
 const postNewGame = (req, res) => {
-    console.log(res.locals)
     Game.create({owner: res.locals.user._id, ...req.body}, (err) => {
         if(err) {
             res.status(400).json(err)
@@ -57,6 +56,10 @@ const deleteGame = (req, res) => {
     })
 }
 
+const wishlist = (req, res) => {
+    res.render('games/wish')
+}
+
 module.exports = {
     gameIndex,
     newGameForm,
@@ -64,7 +67,8 @@ module.exports = {
     showGameDetail,
     editGameForm,
     updateGame,
-    deleteGame
+    deleteGame,
+    wishlist
 }
 
 

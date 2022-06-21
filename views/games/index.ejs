@@ -13,59 +13,82 @@
     <h1>THE BOARD GAME STRATAGIST<br>
     <span class="subtitle">BOARD GAME COLLECTION</span>
     </h1>
+    <% if (user) { %>
     <nav id="mainNav">
-        <div class="btnContainer">
-            <ul class="navButtons">
-                <li><a href="#">ARCHIVE COLLECTION</a></li>
-                <li style="padding-left:1.5em"><a href="/wishlist">WISHLIST COLLECTION</a></li>
-                <li style="padding-left:1.5em">
-                    <% if (user) { %>
-                        <a class="active" href="/logout">LOG OUT</a>
-                        <% } else { %>
-                        <a class="active" href="/auth">LOGIN PAGE</a>
-                        <% } %>
-                </li>
-            </ul>
-        </div>
+      <div class="btnContainer">
+        <ul class="navButtons">
+          <li>
+          <% if (user) { %>
+          <a class="active" href="/logout">LOG OUT</a>
+          <% } else { %>
+          <a class="active" href="/auth">LOGIN PAGE</a>
+          <% } %>
+          </li>
+          <li style="padding-left:1.5em"><a href="games/wishlist">WISHLIST COLLECTION</a></li>
+            <!-- <li style="padding-left:1.5em"><a href="/wishlist">ARCHIVE COLLECTION</a></li> -->
+          </ul>
+      </div>
     </nav>
 </header>
 <ul class="cards">
-    <li>
-        <a href="/games/new" class="card">
-        <img src="/assets/images/newPic.jpg" class="card__image" alt="">
-        <div class="card__overlay">        
-        <div class="card__header">
-            <svg class="card__arc" xmlns="https://www.w3.org/TR/SVG2/"><path /></svg>     
-            <img src="/assets/images/gamesIcon.png" class="card__thumb" alt="">
-        <div class="card__header-text">
-            <h3 style="color: rgb(0, 95, 147); font-weight: bold" class="card__title"><b>ADD NEW GAME</b></h3>
-        </div>
-        </div>
-        <div>
-            <p style="font-weight: bold"class="card__description">Growing your collection? Click here to add your new board game!</p>
-        </div>
-        </div>
-        </a>      
-    </li>
-        <% gameIndex.forEach((Game) =>{ %>
+  <li>
+    <a href="/games/new" class="card">
+    <img src="/assets/images/newPic.jpg" class="card__image" alt="">
+    <div style="background-color: rgb(162, 137, 170);"class="card__overlay">        
+    <div style="background-color: rgb(162, 137, 170);"class="card__header">
+      <svg class="card__arc" xmlns="https://www.w3.org/TR/SVG2/"><path style="fill:rgb(162, 137, 170)" /></svg>     
+      <img src="/assets/images/gamesIcon.png" class="card__thumb" alt="">
+    <div class="card__header-text">
+      <h3 style="color: rgba(255, 229, 199, 0.928); font-weight: bold" class="card__title"><b>ADD NEW GAME</b></h3>
+    </div>
+    </div>
+    <div>
+      <p style="font-weight: bold"class="card__description">Growing your collection? Click here to add your new board game!</p>
+    </div>
+    </div>
+      </a>      
+  </li>
+    <% gameIndex.forEach((Game) =>{ %>
+  <li>
+    <a href="/games/<%= Game._id %>" class="card">
+    <img src="<%= Game.img %>" class="card__image" alt="<%= Game.title %>">
+    <div class="card__overlay">        
+    <div class="card__header">
+      <svg class="card__arc" xmlns="https://www.w3.org/TR/SVG2/"><path /></svg>     
+      <img src="/assets/images/dice1.png" class="card__thumb" alt="">
+    <div class="card__header-text">
+      <h3 class="card__title"><%= Game.title %></h3>
+    </div>
+    </div>
+      <p class="card__description">Click for more Info! </p>
+    </div>
+    </a>
+  </li>
+  <%}) %>
+</ul>
+<% } else { %>
+
+<div class="noUser"> 
+    <h2 style="font-family: 'Playfair Display SC', serif;">Please login to see and/or create your collection!</h2>
+    <h3>Public collection coming soon!</h3>
+</div> 
+<header class= "pageHeader">
+  <nav id="mainNav">
+    <div class="btnContainer">
+      <ul class="navButtons">
         <li>
-            <a href="/games/<%= Game._id %>" class="card">
-                <img src="<%= Game.img %>" class="card__image" alt="<%= Game.title %>">
-                <div class="card__overlay">        
-                <div class="card__header">
-                    <svg class="card__arc" xmlns="https://www.w3.org/TR/SVG2/"><path /></svg>     
-                    <img src="/assets/images/dice1.png" class="card__thumb" alt="">
-                <div class="card__header-text">
-                    <h3 class="card__title"><%= Game.title %></h3>
-                </div>
-                </div>
-                <p class="card__description">Click for more Info! </p>
-                </div>
-            </a>
-            </li>
-        <%}) %>
-    </ul>
-<!-- <div class="dice"></div> -->
+          <% if (user) { %>
+          <a class="active" href="/logout">LOG OUT</a>
+          <% } else { %>
+          <a class="active" href="/auth">LOGIN PAGE</a>
+          <% } %>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header> 
+  <% } %>
+
 </body>
 </body>
 </html>
