@@ -1,9 +1,9 @@
 <div id="top"></div>
 <div align="center">
   <a href="https://github.com/Mhawkins28/BoardGame_App">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
-<h3 align="center">BOARD GAME STRATEGIST <br>*Built by Megan  Hawkins</h3>
+<h3 align="center">BOARD GAME STRATEGIST <br>Built by Megan  Hawkins</h3>
 
   <p align="center">
   This app is perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user!
