@@ -22,9 +22,9 @@
       <a href="#developement ">Planning, Research, and Future Developement</a>
       <ul>
         <li><a href="#initial-Wireframes">Initial Wireframes</a></li>
-        <li><a href="#technologies-used">Technology Used</a></li>
+        <li><a href="#tools-used">Technology Used</a></li>
         <li><a href="#future-features">Future Features</a></li>
-        <li><a href="#helpful-links/resources-for-this-project">Helpful Links</a></li>
+        <li><a href="#helpful-links-for-this-project">Helpful Links</a></li>
         <li><a href="#contributing">Contributing</a></li>
       </ul>
     </li>
@@ -102,7 +102,7 @@ Deploymnet
 
 ### Initial Wireframes
 
-#### Technologies used
+#### Tools used
 - Figma
 - Notes App
 
@@ -112,7 +112,7 @@ Deploymnet
 
 ## Future Features
 
-## Helpful Links/Resources for this Project
+## Helpful Links for this Project
 
 ## Contributing
 
