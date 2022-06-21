@@ -1,13 +1,14 @@
 <div id="top"></div>
-
-<h3 align="center">BOARD GAME STRATEGIST</h3>
+<div align="center">
+  <a href="https://github.com/Mhawkins28/BoardGame_App">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+<h3 align="center">BOARD GAME STRATEGIST <br>*Built by Megan  Hawkins</h3>
 
   <p align="center">
-    My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/Mongoose, Express and EJS.
+  This app is perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user!
     <br />
-    This app will be perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user!
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Mhawkins28/BoardGame_App"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -18,7 +19,6 @@
   </p>
 </div>
 
-# BOARD GAME STRATEGIST *Built by Megan  Hawkins
 
 <details>
   <summary>Table of Contents</summary>
@@ -52,13 +52,8 @@
 </details>
 
 ## About The Project
-<!-- live demo on Heroku -- 
 
 My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/Mongoose, Express and EJS.
-
-This app will be perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user!  -->
-
-<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
 ### Technical Requirements
 
@@ -71,17 +66,17 @@ This app will be perfect for any board game enthusiast out there! This applicati
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Technologies used
-Frontend
+ * Frontend
 - JavaScript
 - HTML
 - CSS
 - EJS
 - Node.js
-Backend
+* Backend
 - Express
 - MongoDB
 - Mongoose
-Deploymnet
+* Deploymnet
 - Heroku
 - Atlas
 
