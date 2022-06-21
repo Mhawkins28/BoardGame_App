@@ -1,7 +1,7 @@
 <div id="top"></div>
 <div align="center">
   <a href="https://github.com/Mhawkins28/BoardGame_App">
-    <img src="./assets/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 <h3 align="center">BOARD GAME STRATEGIST <br>Built by Megan  Hawkins</h3>
 
