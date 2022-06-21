@@ -8,7 +8,7 @@
     <a href="https://github.com/Mhawkins28/BoardGame_App"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="http://boardgame-strategist-app2.herokuapp.com/games">View Demo</a>
     ·
     <a href="https://github.com/Mhawkins28/BoardGame_App/issues">Report Bug</a>
     ·
@@ -24,7 +24,6 @@
       <ul>
         <li><a href="#technical-requirements">Technical Requirements</a></li>
         <li><a href="#technologies-used">Technologies-Used</a></li>
-         <li><a href="#Key-Dependencies">Key Dependencies</a></li>
       </ul>
     </li>
     <li>
@@ -60,25 +59,19 @@ My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/
 - Include wireframes that you designed during the planning process
 
 ### Technologies used
- * Frontend
-- JavaScript
-- HTML
-- CSS
-- EJS
-- Node.js
-* Backend
-- Express
-- MongoDB
-- Mongoose
-* Deploymnet
-- Heroku
-- Atlas
-
-### Key Dependencies
-
-- Passport
-- Passport-google-oauth
-
+**Frontend**
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [EJS](https://www.npmjs.com/package/ejs)
+- [Node.js](https://nodejs.org/dist./v6.16.0/docs/api/synopsis.html)
+**Backend**
+- [Express](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/docs/index.html)
+- [Passport/Passport-google-oauth](https://www.passportjs.org/concepts/authentication/google/)
+**Deploymnet**
+- [Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [MongoDB Atlas](https://www.mongodb.com/atlas)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -90,8 +83,7 @@ My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/
 - As the user, I want multiple pages to see and/or organize the data that is entered. (CRUD routes)
 - As the user, I want to add as many boardgames to the collection as I would like.
 - As the user, I want to add an image of the game. (either with URL or multer. Need to research)
-- As the user, I want to add a description, list how many players can play, the average playtime of each game, and the game category. 
-- As the user, I want the game category options in dropdown list.
+- As the user, I want to add a description, list how many players can play, and the average playtime of each game.
 - As the user, I want to edit or delete the entries I put in the collection.
 - As the user, I want to add reviews and ratings on each game.
 - As the user, I want to edit or delete the reviews and ratings.
@@ -128,19 +120,31 @@ My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Unsolved Problems
-xyz
+
+...will add this secion soon
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Future Features
 
-rough draft notes - multer, more login options, sishlist/archive, filter, search, public collection, api, share, ...
+- Allow user to add photos (not just urls. I will use:
+ * [multer](https://www.npmjs.com/package/multer)
+- Allow user to log in with more login options such as:
+ * user-inputed username/password
+ * [Facebook](http://www.passportjs.org/packages/passport-facebook/)
+ * [Twitter](http://www.passportjs.org/concepts/authentication/twitter/)
+ * etc.
+- Implement a page for the user to add games to a wishlist collection
+- Implement a page for the user to add games to an archive collection
+- Implement functionality for the use to filter and/or search thier collection
+- Implement a page for an open, public cllection, where the user does not have to sign in.  
+- Utilize an API for the user to search a database for new games
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Helpful Links for this Project
 
-will link later
+...Will add links soon
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
