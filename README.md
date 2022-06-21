@@ -1,9 +1,72 @@
-# BOARD GAME STRATEGIST 
--- This application is work in progress --
+# BOARD GAME STRATEGIST *Built by Megan  Hawkins
 
-My first Full-stack application. It is a a full CRUD app using Node.js, Mongoose, Express and EJS,
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#technical-requirements">Technical Requirements</a></li>
+        <li><a href="#technologies-used">Technologies-Used</a></li>
+         <li><a href="#Key-Dependencies">Key Dependencies</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#User-stories">User Stories</a>
+      <ul>
+        <li><a href="#MVP">MVP</a></li>
+        <li><a href="#Stretch-Goals">Stretch Goals</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#developement ">Planning, Research, and Future Developement</a>
+      <ul>
+        <li><a href="#initial-Wireframes">Initial Wireframes</a></li>
+        <li><a href="#technology-used">Technology Used</a></li>
+        <li><a href="#future-features">Future Features</a></li>
+        <li><a href="#helpful-links">Helpful Links</a></li>
+        <li><a href="#contributing">Contributing</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+## About The Project
+live demo on Heroku -- 
+
+My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/Mongoose, Express and EJS.
 
 This app will be perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user! 
+
+### Technical Requirements
+
+- A working full-stack application, built by you, using Node.js, Mongoose, Express and EJS.
+- Adhere to the MVC file structure: Models, Views, Controllers.
+- At least one model with all 7 RESTful routes and full CRUD.
+- Be deployed online and accessible to the public via Heroku
+- Include wireframes that you designed during the planning process
+
+### Technologies used
+Frontend
+- JavaScript
+- HTML
+- CSS
+- EJS
+- Node.js
+Backend
+- Express
+- MongoDB
+- Mongoose
+Deploymnet
+- Heroku
+- Atlas
+
+### Key Dependencies
+
+- Passport
+- Passport-google-oauth
+
+
 
 ## User stories
 
@@ -34,6 +97,30 @@ This app will be perfect for any board game enthusiast out there! This applicati
 - As the user, I would like interesting, smooth page transition animations (SWUP?)
 - As the user, I would like to have the ability to share my collection with friends.
 
-### Wireframes
+## Planning, Research, and Future Developement 
+
+### Initial Wireframes
+
+#### Technologies used
+- Figma
+- Notes App
 
 <img width="1748" alt="PROJECT 2 -- BOARD GAME SHELF" src="https://media.git.generalassemb.ly/user/41550/files/c9324fd4-8628-406b-bbb1-0de240116378">
+
+## Unsolved Problems
+
+## Future Features
+
+## Helpful Links/Resources for this Project
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+
+Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
