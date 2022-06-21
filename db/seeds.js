@@ -9,9 +9,9 @@ Game.deleteMany({})
     return User.create({
     name: "Megan",
     email: "megan.hawkins28@gmail.com",
-    }).then((user) => {
+    }).then(user => {
     return gameSeeds.map((games) => ({ ...games, owner: user._id }));
-    });
+    })
 })
 .then((games) => {
     return Game.insertMany(games);

@@ -1,16 +1,27 @@
 const User = require("../models/User");
 
-async function indexRoute(req, res) {
-  let allUsers = await User.find({});
-  res.json(allUsers);
+const index = (req, res) => {
+  User.find({}, (err, users)=> {
+      if(err){
+          res.status(400).json(err)
+          return
+      }
+      res.json(users)
+  })
 }
 
-function createRoute(req, res) {
-  let newUser = new User(req.body);
-  newUser.save(() => res.json({ message: "User Created" }));
+const create = (req, res) => {
+  User.create(req.body, (err, u)=>{
+      if(err){
+          res.status(400).json(err)
+          return
+      }
+      res.json({u, message: "Successfully Signed Up! Nice to meet you"})
+  })
 }
 
-function showRoute(req, res) {
+
+let show = (req, res) => {
   User.findById(req.params.id, (err, User) => {
     if (err) {
       res.status(400).json(err);
@@ -20,14 +31,25 @@ function showRoute(req, res) {
   });
 }
 
-async function updateRoute(req, res) {
-  await User.findByIdAndUpdate(req.params.id, req.body);
-  res.json(User);
+let update = (req, res) => {
+  User.findByIdAndUpdate(req.params.id, req.body, {new: true} ,(err, u) =>{
+      if(err){
+          res.status(400).json(err)
+          return
+      }
+      res.json(u)
+  } )
 }
 
-async function deleteRoute(req, res) {
-  await User.findByIdAndDelete(req.params.id);
-  res.json({ message: "User deleted" });
+let  deleteIt= (req, res) => {
+  User.findByIdAndDelete(req.params.id, (err, u)=>{
+      if(err){
+          res.status(400).json(err)
+          return
+      }
+
+      res.json({message: 'Item Deleted'})
+  })
 }
 
 
@@ -42,10 +64,10 @@ async function deleteRoute(req, res) {
 // }
 
 module.exports = {
-  indexRoute,
-  createRoute,
-  showRoute,
-  updateRoute,
-  deleteRoute,
+  index,
+  create,
+  show,
+  update,
+  deleteIt,
   // userProfile,
 };

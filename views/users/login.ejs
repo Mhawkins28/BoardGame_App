@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/forms.css">
     <title>Login</title>
 </head>
 <body>
@@ -15,21 +16,28 @@
     <span class="subtitle">The Best Place Online to Store and Orginize Your Board game Collection</span>
     </h1>
     <nav id="mainNav">
-      <div class="btnContainer">
-          <ul class="navButtons">
-              <li><a href="#">ARCHIVE COLLECTION</a></li>
-              <li style="padding-left:1.5em"><a href="/wishlist">WISHLIST COLLECTION</a></li>
-              <li style="padding-left:1.5em">
-                  <% if (user) { %>
-                      <a class="active" href="/logout">LOG OUT</a>
-                      <% } else { %>
-                      <a class="active" href="/auth/google">GOOGLE LOGIN</a>
-                      <% } %>
-              </li>
-          </ul>
-      </div>
-  </nav>
+        <div class="btnContainer">
+            <ul class="navButtons">
+                <li><a href="#">ARCHIVE COLLECTION</a></li>
+                <li style="padding-left:1.5em"><a href="/wishlist">WISHLIST COLLECTION</a></li>
+                <li style="padding-left:1.5em">
+                    <% if (user) { %>
+                    <a class="active" href="/logout">LOG OUT</a>
+                    <% } else { %>
+                    <a class="active" href="/auth/google">GOOGLE LOGIN</a>
+                    <% } %>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
+<main>
+    <section class="formContainer">
+        <div style="font-size: 2rem" class="form">
+            <!-- <p>Welcome to your new favorite board game companion site, The Board Game Stratagist! <br><br> When you log in, you will be able to customize your page to include all of the awesome board games in your collection. <br><br> Now, you can easily access your games so you can show them off, plan your game night, and even review or rate each game so that you can keep track of what you think of each game!</p> -->
+        </div>
 
+    </section>
+</main>
 </body>
 </html> 

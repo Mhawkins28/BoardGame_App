@@ -1,7 +1,12 @@
 const Game = require('../models/Game')
 
 const gameIndex = async (req, res) => {
-    let gameIndex = await Game.find({})
+    let gameIndex 
+    if(res.locals.user?._id) {
+        gameIndex=await Game.find({owner:res.locals.user._id})
+    } else {
+        gameIndex=await Game.find({})  
+    }
     res.render('games/index', {gameIndex})
 }
 
@@ -10,7 +15,8 @@ const newGameForm = (req, res) => {
 }
 
 const postNewGame = (req, res) => {
-    Game.create(req.body, (err) => {
+    console.log(res.locals)
+    Game.create({owner: res.locals.user._id, ...req.body}, (err) => {
         if(err) {
             res.status(400).json(err)
             return

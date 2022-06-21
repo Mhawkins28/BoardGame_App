@@ -3,17 +3,15 @@ const express = require("express");
 const router = express.Router();
 const userCtrl = require("../controllers/userCtrl");
 
-router.get("/", userCtrl.indexRoute);
+router.get("/", userCtrl.index);
 
-router.post("/", userCtrl.createRoute);
+router.post("/", userCtrl.create);
 
-router.get("/:id", userCtrl.showRoute);
+router.get("/:id", userCtrl.show);
 
-router.patch("/:id", userCtrl.updateRoute);
+router.patch("/:id", userCtrl.update);
 
-router.delete("/:id", userCtrl.deleteRoute);
+router.delete("/:id", userCtrl.deleteIt);
 
-
-// router.get("/:profileId", userCtrl.userProfile)
 
 module.exports = router;
