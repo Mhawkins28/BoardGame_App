@@ -22,9 +22,9 @@
       <a href="#developement ">Planning, Research, and Future Developement</a>
       <ul>
         <li><a href="#initial-Wireframes">Initial Wireframes</a></li>
-        <li><a href="#technology-used">Technology Used</a></li>
+        <li><a href="#technologies-used">Technology Used</a></li>
         <li><a href="#future-features">Future Features</a></li>
-        <li><a href="#helpful-links">Helpful Links</a></li>
+        <li><a href="#helpful-links/resources-for-this-project">Helpful Links</a></li>
         <li><a href="#contributing">Contributing</a></li>
       </ul>
     </li>
@@ -97,7 +97,8 @@ Deploymnet
 - As the user, I would like interesting, smooth page transition animations (SWUP?)
 - As the user, I would like to have the ability to share my collection with friends.
 
-## Planning, Research, and Future Developement 
+## Developement 
+#### Planning, Research, and Future Developement 
 
 ### Initial Wireframes
 
