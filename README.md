@@ -1,25 +1,6 @@
 <div id="top"></div>
-<div align="center">
-<h1 align="center">BOARD GAME STRATEGIST</h1>
 
-  <p align="center">
-  This app is perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user!
-    <br />
-    <a href="https://github.com/Mhawkins28/BoardGame_App"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="http://boardgame-strategist-app2.herokuapp.com/games">View Demo</a>
-    ·
-    <a href="https://github.com/Mhawkins28/BoardGame_App/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Mhawkins28/BoardGame_App/issues">Request Feature</a>
-  </p>
-</div>
-
-## About The Project
-
-
-<details>
+<details align="center">
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -48,6 +29,25 @@
     </li>
   </ol>
 </details>
+
+<div align="center">
+<h1 align="center">BOARD GAME STRATEGIST</h1>
+
+  <p align="center">
+  This app is perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user!
+    <br />
+    <a href="https://github.com/Mhawkins28/BoardGame_App"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="http://boardgame-strategist-app2.herokuapp.com/games">View Demo</a>
+    ·
+    <a href="https://github.com/Mhawkins28/BoardGame_App/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Mhawkins28/BoardGame_App/issues">Request Feature</a>
+  </p>
+</div>
+
+## About The Project
 
 My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/Mongoose, Express and EJS.
 
