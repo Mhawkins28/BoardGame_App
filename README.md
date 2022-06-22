@@ -50,7 +50,7 @@
 
 My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/Mongoose, Express and EJS.
 
-Here are a few of the views of the app!
+Here are a few of the views as a loggin-in user.
 
 ![Screen Shot 2022-06-21 at 5 20 11 PM](https://user-images.githubusercontent.com/93104882/174899597-a06af99f-82f2-4332-a43f-d713f7c11193.png)
 ![Screen Shot 2022-06-21 at 5 21 04 PM](https://user-images.githubusercontent.com/93104882/174899608-ad0cc92c-bfb9-42d5-b018-aad776260c5c.png)
