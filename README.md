@@ -16,6 +16,9 @@
   </p>
 </div>
 
+## About The Project
+
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -45,8 +48,6 @@
     </li>
   </ol>
 </details>
-
-## About The Project
 
 My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/Mongoose, Express and EJS.
 
