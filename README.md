@@ -58,7 +58,7 @@ Here are a few of the views as a loggin-in user.
 ![Screen Shot 2022-06-21 at 5 21 55 PM](https://user-images.githubusercontent.com/93104882/174899624-e06464a6-16bf-4bd4-965b-4ab62d9b50c9.png)
 ![Screen Shot 2022-06-21 at 5 22 16 PM](https://user-images.githubusercontent.com/93104882/174899633-42312614-7937-4d26-9c6d-98c16f94bfdc.png)
 
-### Technical Requirements
+## Technical Requirements
 
 - A working full-stack application, built by you, using Node.js, Mongoose, Express and EJS.
 - Adhere to the MVC file structure: Models, Views, Controllers.
@@ -66,7 +66,7 @@ Here are a few of the views as a loggin-in user.
 - Be deployed online and accessible to the public via Heroku
 - Include wireframes that you designed during the planning process
 
-### Technologies used
+## Technologies used
 #### Frontend
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -112,7 +112,7 @@ Here are a few of the views as a loggin-in user.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Developement
-#### Planning, Research, and Future Developement 
+### Planning, Research, and Future Developement 
 
 ### Initial Wireframes
 
@@ -121,12 +121,6 @@ Here are a few of the views as a loggin-in user.
 - Notes App
 
 <img width="1748" alt="PROJECT 2 -- BOARD GAME SHELF" src="https://media.git.generalassemb.ly/user/41550/files/c9324fd4-8628-406b-bbb1-0de240116378">
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Unsolved Problems
-
-...will add this secion soon
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
