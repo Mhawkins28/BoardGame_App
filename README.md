@@ -1,6 +1,6 @@
 <div id="top"></div>
 <div align="center">
-<h3 align="center">BOARD GAME STRATEGIST</h3>
+<h1 align="center">BOARD GAME STRATEGIST</h1>
 
   <p align="center">
   This app is perfect for any board game enthusiast out there! This application will allow the user to store all the boardgames in their arsenal so that they can keep track of them and be ready for any game night or party. There will be flexibility to create, edit, or delete games, making this application unique to each user!
