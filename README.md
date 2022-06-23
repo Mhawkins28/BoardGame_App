@@ -130,10 +130,9 @@ Here are a few of the views as a loggin-in user.
   * [Multer](https://www.npmjs.com/package/multer)
   * [Cloudinary](https://cloudinary.com/documentation)
 - Allow user to log in with more login options such as:
-  * user-inputed username/password
   * [Facebook](http://www.passportjs.org/packages/passport-facebook/)
   * [Twitter](http://www.passportjs.org/concepts/authentication/twitter/)
-  * etc.
+  * User-inputed username/password
 - Implement a page for the user to add games to a wishlist collection
 - Implement a page for the user to add games to an archive collection
 - Implement functionality for the use to filter and/or search thier collection
