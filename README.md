@@ -117,8 +117,8 @@ Here are a few of the views as a loggin-in user.
 ### Initial Wireframes
 
 #### Tools used
-- Figma
-- Notes App
+- [Figma](https://www.figma.com/)
+- Apple Notes App
 
 <img width="1748" alt="PROJECT 2 -- BOARD GAME SHELF" src="https://media.git.generalassemb.ly/user/41550/files/c9324fd4-8628-406b-bbb1-0de240116378">
 
@@ -127,7 +127,8 @@ Here are a few of the views as a loggin-in user.
 ## Future Features
 
 - Allow user to add photos (not just urls. I will use:
-  * [multer](https://www.npmjs.com/package/multer)
+  * [Multer](https://www.npmjs.com/package/multer)
+  * [Cloudinary](https://cloudinary.com/documentation)
 - Allow user to log in with more login options such as:
   * user-inputed username/password
   * [Facebook](http://www.passportjs.org/packages/passport-facebook/)
