@@ -122,6 +122,8 @@ Here are a few of the views as a loggin-in user.
 
 <img width="1748" alt="PROJECT 2 -- BOARD GAME SHELF" src="https://media.git.generalassemb.ly/user/41550/files/c9324fd4-8628-406b-bbb1-0de240116378">
 
+![BG-erd](https://user-images.githubusercontent.com/93104882/175652105-b42a7924-0dd2-4a45-9798-39a1153c94a0.PNG)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Future Features
