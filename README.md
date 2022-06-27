@@ -56,7 +56,7 @@ Here are a few of the views as a loggin-in user.
 ![Screen Shot 2022-06-21 at 5 21 04 PM](https://user-images.githubusercontent.com/93104882/174899608-ad0cc92c-bfb9-42d5-b018-aad776260c5c.png)
 
 ## Do you want to see what a live, exsisting user collection looks like? 
-<b>For testing purposes, you can use the google login with:</b> <br>
+<b>For testing purposes, you can use the Google login with:</b> <br>
 -- email: bgs.test9@gmail.com <br>
 -- password: Apptest123
 
