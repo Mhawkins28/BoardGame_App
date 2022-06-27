@@ -49,14 +49,18 @@
 
 ## About The Project
 
-My first Full-stack application. It is a a full CRUD app using Node.js, MangoDb/Mongoose, Express and EJS.
+My first Full-CRUD application using Node.js, MangoDb/Mongoose, Express and EJS.
 
 Here are a few of the views as a loggin-in user.
-
 ![Screen Shot 2022-06-21 at 5 20 11 PM](https://user-images.githubusercontent.com/93104882/174899597-a06af99f-82f2-4332-a43f-d713f7c11193.png)
 ![Screen Shot 2022-06-21 at 5 21 04 PM](https://user-images.githubusercontent.com/93104882/174899608-ad0cc92c-bfb9-42d5-b018-aad776260c5c.png)
-![Screen Shot 2022-06-21 at 5 21 55 PM](https://user-images.githubusercontent.com/93104882/174899624-e06464a6-16bf-4bd4-965b-4ab62d9b50c9.png)
-![Screen Shot 2022-06-21 at 5 22 16 PM](https://user-images.githubusercontent.com/93104882/174899633-42312614-7937-4d26-9c6d-98c16f94bfdc.png)
+
+## Do you want to see what a live, exsisting user collection looks like? 
+<b>For testing purposes, you can use the google login with:</b> <br>
+-- email: bgs.test9@gmail.com <br>
+-- password: Apptest123
+
+<em>*You can add/edit anything you wish. However, please only delete an item if you added it. Thank you!</em>
 
 ## Technical Requirements
 
