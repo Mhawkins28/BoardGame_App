@@ -14,30 +14,33 @@
   THE BOARD GAME STRATAGIST<br>
   <span  class="subtitle">The Best Place Online to Store and Orginize Your Board game Collection</span>
   </h1>
-  <nav id="mainNav">
-    <div class="btnContainer">
-      <ul class="navButtons">
-        <li>
-        <a style="font-size: 1.35em" class="active" href="/auth/google">GOOGLE LOGIN</a>
-        </li>
-        <li>
-        <a style="font-size: 1.35em; padding-left:1.75em" href="/games">PUBLIC COLLECTION</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 </header>
 <main>
-<section class="infoContainer">
-  <div style="font-size: 2rem" class="welcome">
-    <p><b>Welcome to your new favorite board game companion site!</b>
-      <br><br>
-      When you log in, you will be able to customize your page to include all of the awesome board games (or really any table-top game) in your collection. 
-      <br><br>
-      You will have easy access your games so you can: show them off, plan your perfect game night, and even review or rate each game so you can keep track of what you think of each game!
-      <br><br>
-      SO, LOGIN HERE AND HAVE FUN!!
-      </p>
+<section class="formContainer">
+  <div class="form">
+    <h2>Sign-in with Google or Email:</h2><br>
+
+    <form action="/games" method="POST">
+
+      <a style="font-size: 1.35em;" class="active" id="googleBtn" href="/auth/google">LOGIN</a> <br><br>
+
+      <label for="email"><span>Email:</span>
+      <input type="text" class="input-field" name="email" /></label>
+
+      <label for="password"><span>Password:</span>
+      <input type="text" class="input-field" name="password" /></label>
+
+      <input style="cursor: not-allowed" type="submit" disabled >
+      <a href="/games" class ='button'>Cancel</a>
+
+    </form>
+
+    <br>
+
+    <div class="register">Haven't logged-in before? 
+      <h4>Register<a href="/auth/register"> <em>Here</em></a></h4>
+    </div>
+
   </div>
 </section>
 </main>

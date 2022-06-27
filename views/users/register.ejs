@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/login.css">
+  <title>Register Email</title>
+</head>
+<body>
+<header style="padding-top:25px" class= "pageHeader">
+  <h1>
+  THE BOARD GAME STRATAGIST<br>
+  </h1>
+</header>
+<main>
+<section class="formContainer">
+  <div class="form">
+    <h2>Sign-up with Your Email:</h2><br>
+
+    <form action="/games" method="POST">
+
+      <label for="name"><span>Name:</span>
+      <input type="text" class="input-field" name="name" placeholder="Only Google Login is available at this time"/></label>
+
+      <label for="email"><span>Email:</span>
+      <input type="text" class="input-field" name="email" placeholder="Only Google Login is available at this time"/></label>
+
+      <label for="password"><span>Password:</span>
+      <input type="text" class="input-field" name="password" placeholder="Only Google Login is available at this time" /></label>
+
+      <input style="cursor: not-allowed;" type="submit" disabled>
+      <a href="/auth" class ='button'>Cancel</a>
+
+    </form>
+  </div>
+</section>
+</main>
+</body>
+</html> 

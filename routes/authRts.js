@@ -11,6 +11,12 @@ router.get(
 );
 
 router.get(
+  "/auth/register", (req, res) => {
+    res.render("users/register");
+  }
+)
+
+router.get(
   "/oauth2callback",
   passport.authenticate("google", {
     successRedirect: "/games",

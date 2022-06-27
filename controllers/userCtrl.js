@@ -48,7 +48,7 @@ let  deleteIt= (req, res) => {
           return
       }
 
-      res.json({message: 'Item Deleted'})
+      res.json({message: 'Deleted'})
   })
 }
 
