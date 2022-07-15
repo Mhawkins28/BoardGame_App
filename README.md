@@ -64,7 +64,7 @@ Here are a few of the views as a loggin-in user.
 
 ## Technical Requirements
 
-- A working full-stack application, built by you, using Node.js, Mongoose, Express and EJS.
+- A working full-stack application, built using Node.js, Mongoose, Express and EJS.
 - Adhere to the MVC file structure: Models, Views, Controllers.
 - At least one model with all 7 RESTful routes and full CRUD.
 - Be deployed online and accessible to the public via Heroku
