@@ -1,8 +1,5 @@
 const mongoose = require('mongoose');
 
-// mongoose.connect('mongodb://localhost:27017/mongoose-store', {
-//     useNewUrlParser: true
-// })
 
 mongoose.connect('mongodb+srv://Mhawkins:Megz1028@seiprojects.xqifg.mongodb.net/?retryWrites=true&w=majority', {
     useNewUrlParser: true,
