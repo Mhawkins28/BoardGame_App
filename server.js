@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cookieParser());
 app.use(session({
-  secret: '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',
+  secret: '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',
   resave: false,
   saveUninitialized: true,
 }));
