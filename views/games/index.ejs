@@ -13,7 +13,7 @@
     <h1>THE BOARD GAME STRATEGIST<br>
     <span class="subtitle">Board Game Collection</span>
     </h1>
-    <%# if (user) { %>
+    <% if (user) { %>
     <nav id="mainNav">
       <div class="btnContainer">
         <ul class="navButtons">
@@ -66,10 +66,10 @@
   </li>
   <%}) %>
 </ul>
-<%# } else { %>
+<% } else { %>
 
 
-<!-- <div class="noUser">  
+<div class="noUser">  
     <h2 style="font-family: 'Playfair Display SC', serif;">Please login to see and/or create your collection!</h2>
     <h3>Public collection coming soon!</h3>
 </div> 
@@ -88,8 +88,8 @@
     </div>
   </nav>
 </header> 
-  <%# } %>
--->
+  <% } %>
+
 </body>
 </body>
 </html>
