@@ -6,10 +6,8 @@ const gameSeeds = require('./seeds.json');
 Game.deleteMany({})
 .then(() => User.deleteMany({}))
 .then(() => {
-    return User.create({
-    name: "Megan",
-    email: "megan.hawkins28@gmail.com",
-    }).then(user => {
+    return User.create({}).
+    then(user => {
     return gameSeeds.map((games) => ({ ...games, owner: user._id }));
     })
 })
