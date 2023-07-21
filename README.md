@@ -39,7 +39,7 @@
     <a href="https://github.com/Mhawkins28/BoardGame_App"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="http://boardgame-strategist-app2.herokuapp.com/auth">View Live Site</a>
+    <a href="https://boardgame-tracker-226c45dc8181.herokuapp.com/">View Live Site</a>
     ·
     <a href="https://github.com/Mhawkins28/BoardGame_App/issues">Report Bug</a>
     ·
