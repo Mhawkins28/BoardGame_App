@@ -55,13 +55,6 @@ Here are a few of the views as a loggin-in user.
 ![Screen Shot 2022-06-21 at 5 20 11 PM](https://user-images.githubusercontent.com/93104882/174899597-a06af99f-82f2-4332-a43f-d713f7c11193.png)
 ![Screen Shot 2022-06-21 at 5 21 04 PM](https://user-images.githubusercontent.com/93104882/174899608-ad0cc92c-bfb9-42d5-b018-aad776260c5c.png)
 
-## Do you want to see what a live, exsisting user collection looks like? 
-<b>For testing purposes, you can use the Google login with:</b> <br>
--- email: bgs.test9@gmail.com <br>
--- password: Apptest123
-
-<em>*You can add/edit anything you wish. However, please only delete an item if you added it. Thank you!</em>
-
 ## Technical Requirements
 
 - A working full-stack application, built using Node.js, Mongoose, Express and EJS.
@@ -98,10 +91,10 @@ Here are a few of the views as a loggin-in user.
 - As the user, I want to edit or delete the entries I put in the collection.
 - As the user, I want to add reviews and ratings on each game.
 - As the user, I want to edit or delete the reviews and ratings.
+- As the user, I would like a Homepage with User authentication/login.
 
 ### Stretch Goals
 
-- As the user, I would like a Homepage with User authentication/login.
 - As the user, with a login, I want to have my personal game collection with all the MVP goals attached to that profile.
 - As the user, I would like to filter my collection by rating, number of players, playtime, or category.
 - As the user, I would like access a database of existing games and use that data for my entries.
